@@ -1,8 +1,8 @@
 <template>
     <!--menu container-->
-    <div id="nav-menu">
-      <!--Menu content-->
-      <div class="nav-content" :class= "{'showMobileMenu': showMobileMenu} " @click="showMenu">
+    <div id="nav-menu-mobile">
+    <!--Menu content-->
+    <div class="nav-content" :class= "{'showMobileMenu': showMobileMenu} " @click="showMenu">
         <ul class="nav-items">
           <li><router-link class="header-anchor-element" :to="{ name: 'AboutMeApp' }">Je me présente</router-link></li>
           <li><router-link class="header-anchor-element" :to="{ name: 'ProjectsApp' }">Mes Projets</router-link></li>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style >
-#nav-menu {
+.nav-menu {
   background-color: black;
   display: flex;
   justify-content: space-around;
