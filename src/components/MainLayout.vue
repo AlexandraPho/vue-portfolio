@@ -2,9 +2,9 @@
     <div class="block-container">
         <div class="container-one">
             <div class="profile">
-                <img src="../assets/personal-img.png" alt="profile-image">
                 <h2>Alexandra Pinheiro</h2>
                 <p>Développeuse Web Vue.js</p>
+                <img src="../assets/personal-img.png" alt="profile-image">
             </div>
             <div class="social-links">
                 <a href="">
@@ -33,4 +33,11 @@
 
 <style>
 
+    .block-container {
+    }
+
+    .img {
+        width: 30rem;
+    }
+    
 </style>
