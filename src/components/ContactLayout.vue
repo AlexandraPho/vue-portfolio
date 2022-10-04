@@ -17,7 +17,7 @@
                 <p>pinheiroalexandra.dev@gmail.com</p>
             </div>
             <div class="linkdIn">
-                <img class="logo-linkdin" alt="logo-linkdin" src="../assets/linkdin.svg">
+                <img class="logo-linkdin" alt="logo-linkdin" src="../assets/linkedin.svg">
                 <p>www.linkedin.com/in/alexandra-pinheiro/</p>
             </div>
         </section> 
