@@ -1,109 +1,113 @@
 <template>
-    <!--menu container-->
-    <div id="nav-menu">
+  <div>
+    <!-- Menu container-->
+    <div class="nav-menu"> 
+      <!--Hamburger icon with click method-->
+      <img src="../assets/menu.svg" class="burger-menu" @click="showMenu()"> 
       <!--Menu content-->
-      <div class="nav-content" :class= "{'showMobileMenu': showMobileMenu} " @click="showMenu">
+      <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
+        <!--LOGO-->
+        <div class="logo">Logo</div>
         <ul class="nav-items">
-          <li><router-link class="header-anchor-element" :to="{ name: 'AboutMeApp' }">Je me présente</router-link></li>
-          <li><router-link class="header-anchor-element" :to="{ name: 'ProjectsApp' }">Mes Projets</router-link></li>
-          <li><router-link class="header-anchor-element" :to="{ name: 'ContactApp' }">Contact</router-link></li>
+          <li>Je me présente</li>
+          <li>Mes projets</li>
+          <li>Contact</li>
         </ul>
-        <button class="cv-button">Mon CV</button>
+        <div class="CV-button">Mon CV</div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "NavigationLayout",
+
+  export default {
+    data() {
+      return {
+        showMobileMenu: false,
+        };
+    },
+    methods: {
+      showMenu() {
+        this.showMobileMenu = !this.showMobileMenu;
+      },
+    },
   };
+
 </script>
 
 <style >
-#nav-menu {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-}
- .burger-menu {
-  color: white;
- }
-.nav-content {
-  display: flex;
-  padding: 20px 30px;
-  align-items: center;
-  margin-left: 150px;
-}
-.nav-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 150px;    
-}
-li {
-  padding: 10px 10px;
-  color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-i {
-  display: block;
-}
-.cv-button {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-  background-color:white;
-  color: rgb(0, 7, 184);
-}
-
-/*Mobile version - hidden hamburger menu*/
-@media screen and (max-width: 768px) {
   .nav-menu {
-    background-color: black;
-    padding-top: 10px;
-    position: absolute;
-    width: 50%;
-    }
-  .open-menu {
-    opacity: 2;
-    height: 300px;
-  }
-  .closed-menu {
-    opacity: 2;
-    height: 50px;
-    padding: 0;
+    background-color: white;
   }
   .nav-content {
-    flex-direction: column;
-    z-index: 100;
-    position: relative;
-    transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
   }
   .nav-items {
-    flex-direction: column;
-    font-size: 15px;
-  }
-  .menu-item {
-    color: white;
-    display: block;
-    text-align: right;
-    padding: 5px;
-  }
-  .cv-button {
-  margin-top: 15px;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-  background-color:white;
-  color: rgb(0, 7, 184);
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .nav-items {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
+  li {
+
+    padding: 0 10px;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  /*Mobile version - hidden hamburger menu*/
   
-}
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      background-color: black;
+      padding: 15px;
+      position: absolute;
+      width: 100%;
+    }
+    .open-menu {
+      opacity: 1;
+      height: 150px;
+    }
+    .closed-menu {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+    .nav-content {
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 100;
+      position: relative;
+      transition: all 0.2s ease-out;
+    }
+    .nav-items {
+      flex-direction: column;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+    }
+    .burger-menu {
+      background-color: white;
+      width: 35px;
+      display: flex;
+      border-radius: 50px;
+    }
+    li {
+      margin: 10px;
+    }
+    .CV-button {
+      color: white;
+      border-radius: 5px;
+      border: solid 1px white;
+      padding: 5px;
+      margin: 15px;
+    }
+  }
 </style>
