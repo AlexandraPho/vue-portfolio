@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeApp from '../views/HomeApp.vue'
 import AboutMeApp from '../views/AboutMeApp.vue'

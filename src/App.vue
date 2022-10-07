@@ -16,8 +16,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 body{
-margin:auto;
-padding:auto;
+  background-color: black;
+  color: white;
+  margin:auto;
+  padding:auto;
 }
 
 
