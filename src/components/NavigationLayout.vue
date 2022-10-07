@@ -182,18 +182,12 @@
     .container {
       padding: 10px;
       width: 100%;
-      height: 5em;
+      height: 50px;
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
     }
-    .menu-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      }
     .header-logo {
-      font-size: larger;
+      font-size: x-large;
       color: rgb(255, 103, 99);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -203,11 +197,11 @@
     }
     .nav-content {
       opacity: 1;
-
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
     }
     .nav-items {
-      color: white;
-      display: flex;
       flex-direction: row
     }
     li {
