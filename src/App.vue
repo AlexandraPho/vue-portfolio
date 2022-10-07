@@ -11,11 +11,14 @@ export default {
 </script>
 
 <style>
- 
-  body {
-    
-    background-color: black;
-    color:white;
-  }
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+body{
+margin:auto;
+padding:auto;
+}
+
 
 </style>

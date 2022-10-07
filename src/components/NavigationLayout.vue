@@ -1,109 +1,221 @@
 <template>
-    <!--menu container-->
-    <div id="nav-menu">
-      <!--Menu content-->
-      <div class="nav-content" :class= "{'showMobileMenu': showMobileMenu} " @click="showMenu">
-        <ul class="nav-items">
-          <li><router-link class="header-anchor-element" :to="{ name: 'AboutMeApp' }">Je me présente</router-link></li>
-          <li><router-link class="header-anchor-element" :to="{ name: 'ProjectsApp' }">Mes Projets</router-link></li>
-          <li><router-link class="header-anchor-element" :to="{ name: 'ContactApp' }">Contact</router-link></li>
-        </ul>
-        <button class="cv-button">Mon CV</button>
+  <div>
+    <!-- Menu container-->
+    <div class="container"> 
+      <div class="menu-header">
+        <!--LOGO-->
+          <h1 class="header-logo">Alexandra Pinheiro</h1>
+          <!--Hamburger icon with click method-->
+          <img src="../assets/menu.svg" class="img-burger-menu" @click="showMenu()"> 
       </div>
+          <!--Menu content-->
+          <nav class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
+            <ul class="nav-items">
+              <li>Je me présente</li>
+              <li>Mes projets</li>
+              <li>Contact</li>
+            </ul>
+            <div class="CV-button">Mon CV</div>
+          </nav>
+        
     </div>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "NavigationLayout",
+
+  export default {
+    data() {
+      return {
+        showMobileMenu: false,
+        };
+    },
+    methods: {
+      showMenu() {
+        this.showMobileMenu = !this.showMobileMenu;
+      },
+    },
   };
+
 </script>
 
 <style >
-#nav-menu {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-}
- .burger-menu {
-  color: white;
- }
-.nav-content {
-  display: flex;
-  padding: 20px 30px;
-  align-items: center;
-  margin-left: 150px;
-}
-.nav-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 150px;    
-}
-li {
-  padding: 10px 10px;
-  color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-i {
-  display: block;
-}
-.cv-button {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-  background-color:white;
-  color: rgb(0, 7, 184);
-}
-
-/*Mobile version - hidden hamburger menu*/
-@media screen and (max-width: 768px) {
-  .nav-menu {
+  .container {
     background-color: black;
-    padding-top: 10px;
-    position: absolute;
-    width: 50%;
-    }
-  .open-menu {
-    opacity: 2;
-    height: 300px;
-  }
-  .closed-menu {
-    opacity: 2;
-    height: 50px;
-    padding: 0;
   }
   .nav-content {
-    flex-direction: column;
-    z-index: 100;
-    position: relative;
-    transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: flex-start;
   }
   .nav-items {
-    flex-direction: column;
-    font-size: 15px;
-  }
-  .menu-item {
-    color: white;
-    display: block;
-    text-align: right;
-    padding: 5px;
-  }
-  .cv-button {
-  margin-top: 15px;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-  background-color:white;
-  color: rgb(0, 7, 184);
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .nav-items {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0 10px;
   }
   
-}
+
+  /*Mobile version - hidden hamburger menu*/
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 15px;
+      position: absolute;
+      width: 100%;
+    }
+    .menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+    .header-logo {
+      font-size: small;
+      color: rgb(255, 103, 99);
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin: 0px;
+    }
+    .img-burger-menu {
+      width: 25px;
+    }
+    .nav-content {
+      flex-direction: column;
+      align-items: center;
+      z-index: 100;
+      position: relative;
+      transition: all 0.2s ease-out;
+      margin: 5px;
+    }
+    .open-menu {
+      opacity: 1;
+      height: 150px;
+    }
+    .closed-menu {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+    .nav-items {
+      flex-direction: column;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+    li {
+      margin: 10px;
+    }
+    .CV-button {
+      color: white;
+      border-radius: 5px;
+      border: solid 1px rgb(255, 103, 99);
+      padding: 5px;
+      margin: 15px;
+    }
+  }
+
+  /*Tablet version*/
+  @media screen and (min-width: 769px) {
+    .container {
+      padding: 15px;
+      position: absolute;
+      width: 100%;
+    }
+    .menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+    .header-logo {
+      font-size: small;
+      color: rgb(255, 103, 99);
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin: 0px;
+    }
+    .img-burger-menu {
+      width: 25px;
+    }
+    .nav-content {
+      flex-direction: column;
+      align-items: center;
+      z-index: 100;
+      position: relative;
+      transition: all 0.2s ease-out;
+      margin: 5px;
+    }
+    .open-menu {
+      opacity: 1;
+      height: 150px;
+    }
+    .closed-menu {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+    .nav-items {
+      flex-direction: column;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+    li {
+      margin: 10px;
+    }
+    .CV-button {
+      color: white;
+      border-radius: 5px;
+      border: solid 1px rgb(255, 103, 99);
+      padding: 5px;
+      margin: 15px;
+    }
+  }
+
+  /*Desktop version*/
+  @media screen and (min-width: 1024px) {
+    .container {
+      padding: 10px;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .header-logo {
+      font-size: x-large;
+      color: rgb(255, 103, 99);
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .img-burger-menu {
+      display: none;
+    }
+    .nav-content {
+      opacity: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .nav-items {
+      flex-direction: row
+    }
+    li {
+      margin: 10px;
+      font-size: 1.1em;
+    }
+    .CV-button {
+      color: white;
+      border-radius: 5px;
+      border: solid 1px rgb(255, 103, 99);
+      padding: 5px;
+      font-size: 1.1em;
+      margin: 5px 60px;
+    }
+  }
+  
 </style>
