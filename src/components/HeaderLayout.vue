@@ -30,7 +30,9 @@
   }
   </script>
   
-  <style>
-    
+  <style scoped>
+    header {
+      position: sticky;
+    }
   </style>
   

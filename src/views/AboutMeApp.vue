@@ -1,15 +1,15 @@
 <template>
-    <HeaderLayout/>
+    <!--<HeaderLayout/>-->
     <AboutMeLayout/>
 </template>
 
 <script>
-    import HeaderLayout from '../components/HeaderLayout.vue'
+    //import HeaderLayout from '../components/HeaderLayout.vue'
     import AboutMeLayout from '../components/AboutMeLayout.vue'
 
     export default {
         components: {
-            HeaderLayout,
+            //HeaderLayout,
             AboutMeLayout,
         }
     }

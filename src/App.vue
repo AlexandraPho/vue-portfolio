@@ -14,10 +14,12 @@ export default {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 body{
-margin:auto;
-padding:auto;
+  background-color: black;
+  color:white;
+  margin:auto;
 }
 
 

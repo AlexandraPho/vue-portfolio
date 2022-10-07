@@ -33,7 +33,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .block-container {
         margin: 10px;
     }

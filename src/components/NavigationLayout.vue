@@ -67,7 +67,7 @@
   @media screen and (max-width: 768px) {
     .container {
       padding: 15px;
-      position: absolute;
+      position: relative;
       width: 100%;
     }
     .menu-header {

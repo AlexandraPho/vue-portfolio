@@ -4,7 +4,7 @@
           Je me présente
       </h2>
         <div class="container-one">
-            <section class="aboutme">
+            <section class="about-me">
           <h3 class="titles">
             Curieuse
           </h3>
@@ -34,9 +34,9 @@
         <div class="logos">
           <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
           <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
+          <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
           <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
           <img class="logo-techs" alt="logo-js" src="../assets/javascript.svg">
-          <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
           <img class="logo-techs" alt="logo-mysql" src="../assets/mysql.svg">
           <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
           <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
@@ -52,8 +52,52 @@
     export default {
       name: "AboutMeLayout"
     }
-</script>
+</script> 
 
-<style lang="scss">
+<style scoped>
+  
+  .titles-components {
+    text-transform: uppercase;
+    color: white;
+    margin-left: 25px;
+  }
 
+  @media screen and (max-width: 767px) {
+    .block-container {
+      position: absolute;
+      z-index: 3;
+    }
+    .about-me {
+      width: 15em;
+      text-align: start;
+      padding: 15px 20px;
+      background-color: rgb(255, 103, 99);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .titles {
+      font-size: large;
+      text-transform: uppercase;
+    }
+    p {
+      width: 15em;
+    }
+    .stack-technic {
+      width: 15em;
+      text-align: start;
+      padding: 15px 20px;
+      background-color: black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .logos {
+      background-color: white;
+    }
+    .logo-techs {
+      width: 50px;
+      margin: 10px;
+    }
+  }
 </style>
