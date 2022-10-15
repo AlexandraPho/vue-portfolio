@@ -24,17 +24,20 @@
         margin: 10px;
     }
     p {
-    font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+        font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
     }
     h1 {
         text-transform: uppercase;
     }
     
+    /*Smartphone version*/
 @media only screen and (max-width: 767px) {
+    .block-container {
+        margin: 60px 20px;
+    }
     #profile {
         display: flex;
         flex-direction: column;
-        margin: 20px;
         align-items: center;
     }
     h1 {
@@ -47,63 +50,47 @@
     }
     .profile-image {
         align-self: center;
-        margin: 60px 40px;
+        margin: 60px 10px 10px 30px;
     }
     .perso-img {
-        width: 11em;
-        box-shadow: -40px 50px rgb(255 103 99);
+        width: 13em;
+        box-shadow: -20px 30px rgb(255 103 99);
     }
 }
 
+/*Tablet version*/
 @media only screen and (min-width: 768px) {
+    .block-container {
+        margin: 60px 20px;
+    }
     #profile {
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 20px; 
     } 
     h1 {
         font-size: 50px;
         margin: 60px 0px 10px;
     }
     p {
-        font-size: x-large;
-        margin: 0px;
+        font-size: 20px;
+        margin: 5px;
     }
     .profile-image {
+        margin: 130px 10px 10px 40px; 
         align-self: center;
-        margin: 60px 40px;
     }
     .perso-img {
-        width: 20em;
-        box-shadow: -40px 50px rgb(255 103 99);
-    }
-    
-    #social-links {
-        color: white;
-        justify-content: space-evenly;
-        display: flex;
-        margin: 60px 5px; 
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: large;
-    }
-    .link {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-link {
-        background-color:rgb(255 103 99);
-        width: 5rem;
-        border-radius: 70px;
+        width: 22em;
+        box-shadow: -20px 30px rgb(255 103 99);
     }
 }
 
-@media only screen and (min-width: 1200px) {
+/*Desktop version*/
+@media only screen and (min-width: 1024px) {
+    .block-container {
+        margin: 60px 20px;
+    }
     h2 {
         font-size: 50px;
         margin: 20px 40px;
@@ -115,34 +102,11 @@
     }
     .profile-image {
         align-self: center;
-        margin: 60px;
+        margin: 130px 10px 10px 40px; 
     }
     .perso-img {
         width: 30em;
-        box-shadow: -60px 70px rgb(255 103 99);
-    }
-
-    #social-links {
-        color: white;
-        justify-content: space-evenly;
-        display: flex;
-        margin: 100px 5px; 
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: large;
-    }
-    .link {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-link {
-        background-color:rgb(255 103 99);
-        width: 7rem;
-        border-radius: 70px;
+        box-shadow: -20px 30px rgb(255 103 99);
     }
 }
 </style>
