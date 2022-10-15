@@ -31,8 +31,8 @@
   </script>
   
   <style scoped>
-    header {
-      position: sticky;
-    }
+   header {
+    height: 3em;
+   }
   </style>
   

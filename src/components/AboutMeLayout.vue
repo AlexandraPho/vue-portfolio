@@ -63,18 +63,15 @@
   }
 
   @media screen and (max-width: 767px) {
-    .block-container {
-      position: absolute;
-      z-index: 3;
-    }
+    
     .about-me {
-      width: 15em;
+      /*width: 15em;*/
       text-align: start;
       padding: 15px 20px;
       background-color: rgb(255, 103, 99);
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      /*justify-content: flex-start;*/
     }
     .titles {
       font-size: large;
@@ -84,13 +81,13 @@
       width: 15em;
     }
     .stack-technic {
-      width: 15em;
+      /*width: 15em;*/
       text-align: start;
       padding: 15px 20px;
       background-color: black;
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      /*justify-content: flex-start;*/
     }
     .logos {
       background-color: white;

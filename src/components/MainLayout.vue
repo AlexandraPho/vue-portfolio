@@ -2,25 +2,11 @@
     <div class="block-container">
         <div class="container-one">
             <div id="profile">
-                <h2>Alexandra Pinheiro</h2>
-                <p>Développeuse Web Vue.js</p>
+                <h1>Développeuse</h1>
+                <p>Vue.js - Wordpress</p>
                 <div class="profile-image">
                     <img src="../assets/personal-img.png" class="perso-img" alt="profile-image">
                 </div>
-            </div>
-            <div id="social-links">
-                <a href="">
-                    <div class="link">
-                        <img src="../assets/github.svg" class="img-link" alt="Github">
-                        <h3>Github</h3>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="link">
-                        <img src="../assets/linkedin.svg" class="img-link" alt="LinkdIn">
-                        <h3>LinkdIn</h3>
-                    </div>
-                </a>
             </div>
         </div>
         
@@ -37,26 +23,27 @@
     .block-container {
         margin: 10px;
     }
-    h2, p {
+    p {
     font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
     }
-    h2 {
+    h1 {
         text-transform: uppercase;
     }
     
 @media only screen and (max-width: 767px) {
     #profile {
-        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        margin: 20px; 
+        margin: 20px;
+        align-items: center;
     }
-    h2 {
-        font-size: 20px;
-        margin: 10px;
+    h1 {
+        font-size: 30px;
+        margin: 5px;
     }
     p {
-        margin: 10px;
+        font-size: 20px;
+        margin: 5px;
     }
     .profile-image {
         align-self: center;
@@ -66,46 +53,22 @@
         width: 11em;
         box-shadow: -40px 50px rgb(255 103 99);
     }
-
-    #social-links {
-        color: white;
-        justify-content: space-evenly;
-        display: flex;
-        margin: 60px 5px; 
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: normal;
-    }
-    .link {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-link {
-        background-color:rgb(255 103 99);
-        width: 3rem;
-        border-radius: 70px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
     #profile {
-        align-items: flex-start;
+        align-items: center;
         display: flex;
         flex-direction: column;
         margin: 20px; 
     } 
-    h2 {
-        font-size: 40px;
-        margin: 20px;
+    h1 {
+        font-size: 50px;
+        margin: 60px 0px 10px;
     }
     p {
         font-size: x-large;
-        margin: 20px;
-
+        margin: 0px;
     }
     .profile-image {
         align-self: center;

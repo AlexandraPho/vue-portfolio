@@ -3,6 +3,7 @@ import HomeApp from '../views/HomeApp.vue'
 import AboutMeApp from '../views/AboutMeApp.vue'
 import ContactApp from '../views/ContactApp.vue'
 import ProjectsApp from '../views/ProjectsApp.vue'
+import ProjectPageApp from '../views/ProjectPageApp.vue'
 
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: '/projects',
     name: 'ProjectsApp',
     component: ProjectsApp
+  },
+  {
+    path: '/project-one',
+    name: 'ProjectOneApp',
+    component: ProjectPageApp
   },
   {
     path: '/contact',

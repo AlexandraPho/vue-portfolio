@@ -1,16 +1,17 @@
 <template>
     <HeaderLayout/>
-    <AboutMeLayout/>
+    <ProjectOne/>
 </template>
 
 <script>
     import HeaderLayout from '../components/HeaderLayout.vue'
-    import AboutMeLayout from '../components/AboutMeLayout.vue'
+    import ProjectOne from '../components/ProjectOne.vue'
+
 
     export default {
         components: {
             HeaderLayout,
-            AboutMeLayout,
+            ProjectOne
         }
     }
 </script>

@@ -4,16 +4,16 @@
     <div class="container"> 
       <div class="menu-header">
         <!--LOGO-->
-          <h1 class="header-logo">Alexandra Pinheiro</h1>
+         <router-link :to="{name: 'HomeApp'}"><h1 class="header-logo">Alexandra Pinheiro</h1></router-link> 
           <!--Hamburger icon with click method-->
           <img src="../assets/menu.svg" class="img-burger-menu" @click="showMenu()"> 
       </div>
           <!--Menu content-->
           <nav class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
             <ul class="nav-items">
-              <li>Je me présente</li>
-              <li>Mes projets</li>
-              <li>Contact</li>
+              <router-link :to="{name: 'AboutMeApp'}"><li>Je me présente</li></router-link>
+              <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
+              <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
             <div class="CV-button">Mon CV</div>
           </nav>
@@ -39,9 +39,12 @@
 
 </script>
 
-<style >
+<style scoped>
   .container {
     background-color: black;
+    z-index: 1;
+    width: 95%;
+    position: absolute;
   }
   .nav-content {
     display: flex;
@@ -58,17 +61,19 @@
     padding: 0;
   }
   li {
+    color: white;
     padding: 0 10px;
   }
-  
+  a {
+    text-decoration: none;
+  }
 
   /*Mobile version - hidden hamburger menu*/
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .container {
-      padding: 15px;
-      position: relative;
-      width: 100%;
+      padding: 5px;
+      
     }
     .menu-header {
       display: flex;
@@ -76,7 +81,7 @@
       align-items: center;
       }
     .header-logo {
-      font-size: small;
+      font-size: 20px;
       color: rgb(255, 103, 99);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -121,11 +126,11 @@
   }
 
   /*Tablet version*/
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     .container {
       padding: 15px;
       position: absolute;
-      width: 100%;
+      width: 95%;
     }
     .menu-header {
       display: flex;
@@ -133,7 +138,7 @@
       align-items: center;
       }
     .header-logo {
-      font-size: small;
+      font-size: 20px;
       color: rgb(255, 103, 99);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -160,6 +165,7 @@
       padding: 0;
     }
     .nav-items {
+      font-size: large;
       flex-direction: column;
       color: white;
       display: flex;
@@ -187,7 +193,7 @@
       justify-content: space-around;
     }
     .header-logo {
-      font-size: x-large;
+      font-size: 30px;
       color: rgb(255, 103, 99);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

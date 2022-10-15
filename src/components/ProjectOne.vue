@@ -1,7 +1,7 @@
 <template>
     <div class="block-container">
       <h2 class="titles-components">
-          Mes projets
+          Spotart
       </h2>
       <div class="container">
         <section class="container-one">
@@ -14,7 +14,7 @@
             </h4>
           </div>
           <div class="project-img">
-           <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
+            <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
           </div>
         </section>
         <section class="container-two">
@@ -36,42 +36,10 @@
   
   <script>
   export default {
-    name: "ProjectsLayout"
+    name: "ProjectOne"
   }
   </script>
   
   <style scoped>
 
-  @media screen and (max-width: 767px) {
-      .block-container {
-        
-      }
-      .container {
-        margin-top: 3em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .container-one {
-        padding: 15px 20px;
-        background-color: white;
-        color: black;
-        width: 85%;
-      }
-      .project-img {
-        justify-content: flex-end;
-        display: flex;
-        margin: 10px;
-      }
-      .container-two {
-        padding: 15px 20px;
-        background-color: rgb(255, 103, 99);
-        color: white;
-        width: 85%;
-      }
-      h4 {
-        font-weight: 100;
-      }
-   
-  }
   </style>
