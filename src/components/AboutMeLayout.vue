@@ -1,46 +1,48 @@
 <template>
     <div class="block-container">
       <h2 class="titles-components">
-          Je me présente
+          Je suis...
       </h2>
         <div class="container-one">
             <section class="about-me">
-          <h3 class="titles">
-            Curieuse
-          </h3>
-          <p>
-            J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
-            L'apprentissage est pour moi une façon de me renouveler constamment.
-          </p>
-          <h3 class="titles">
-            Reconversion
-          </h3>
-          <p>
-            En 2020, je  démarre des cours sur diverses plateforme pour apprendre le langage HTML et CSS en autodidacte.
-            Et c'est le déclic lorsque le créateur du site web de mon ancienne entreprise me montre comment ça se passe sous le capot!
-          </p>
-          <h3 class="titles">
-            Formation
-          </h3>
-          <p>
-            En septembre 2021, je rejoint la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
-            A la clé une présentation sur Youtube du site Web créé avec l'aide de mon groupe de travail. 
-          </p>
-      </section> 
-      <section class="stack-technic">
-        <h3 class="titles-stack">
-          Stack technique
-        </h3>
-        <div class="logos">
-          <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
-          <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
-          <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
-          <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
-          <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
-          <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
-          <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
-        </div> 
-      </section>
+              <h3 class="titles">
+                Curieuse
+              </h3>
+              <p>
+                J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
+                L'apprentissage est pour moi une façon de me renouveler constamment.
+              </p>
+              <h3 class="titles">
+                Motivé
+              </h3>
+              <p>
+                En 2020, je  démarre des cours sur diverses plateforme pour apprendre le langage HTML et CSS en autodidacte.
+                En septembre 2021, je rejoint la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
+              </p>
+            </section>
+            <section class="soft_hard-skills">
+              <h3 class="skills-titles">
+                Mes Soft & hard skills
+              </h3>
+              <div class="soft-skills">
+                <span class="skills">Curieuse</span>
+                <span class="skills">Autonome</span>
+                <span class="skills">Esprit d'équipe</span>
+                <span class="skills">Communication</span>
+              </div>
+              <div class="stack-tech">
+                <p>Les outils techs que j'utilise</p>
+                <div class="logos">
+                  <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
+                  <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
+                  <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
+                  <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
+                  <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
+                  <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
+                  <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
+                </div> 
+              </div>
+            </section> 
         </div>
     </div>
 </template>
@@ -57,7 +59,6 @@
   @media screen and (max-width: 767px) {
     
     .block-container {
-      background-color: rgb(249, 215, 215);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -69,28 +70,41 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 15px 20px;
+      padding: 10px 15px;
       color: white;
     }
     .titles {
       font-size: large;
       text-transform: uppercase;
-      color: black;
+      color: white;
     }
     p {
-      /*width: 15em;*/
-      color: black;
+      color: rgb(191, 191, 196);
     }
-    .stack-technic {
-      margin: 10px;
+    .soft_hard-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skills-titles {
+      font-size: large;
+      margin: 1.5em;
+    }
+    .soft-skills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-    .titles-stack {
-      font-size: large;
-      text-transform: uppercase;
-      color: black;
+    .skills {
+      margin: 5px;
+      padding: 5px;
+      background-color: rgb(255, 103, 99);
+    }
+    .stack-tech {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1.5em;
     }
     .logos {
       padding: 10px;
@@ -108,7 +122,6 @@
   @media screen and (min-width: 768px) {
 
     .block-container {
-      background-color: rgb(249, 215, 215);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -128,24 +141,32 @@
     .titles {
       font-size: x-large;
       text-transform: uppercase;
-      color: black;
+      color: white;
     }
     p {
       margin: 5px;
       font-size: 1.5em;
-      color: black;
+      color: rgb(191, 191, 196);
     }
-    .stack-technic {
-      padding: 15px 20px;
-      margin: 30px;
+    .soft_hard-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skills-titles {
+      font-size: x-large;
+      margin: 2.5em;
+    }
+    .skills {
+      margin: 15px;
+      padding: 15px;
+      background-color: rgb(255, 103, 99);
+    }
+    .stack-tech {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-    }
-    .titles-stack {
-      font-size: x-large;
-      text-transform: uppercase;
-      color: black;
+      margin: 3em;
     }
     .logos {
       padding: 10px;
@@ -162,15 +183,13 @@
   /*Desktop Version*/
   @media screen and (min-width: 1200px) {
     .block-container {
-      background-color: rgb(249, 215, 215);
       margin: 30px;
     }
     .titles-components {
       font-size: xxx-large;
     }
     .container-one {
-      display: flex;
-      align-items: baseline;
+     
     }
     .about-me {
       margin: 10px;
@@ -180,21 +199,31 @@
     .titles {
       font-size: x-large;
       text-transform: uppercase;
-      color: black;
+      color: white;
     }
     p {
+      text-align: center;
       margin: 5px;
       font-size: 1.5em;
-      color: black;
+      color: rgb(191, 191, 196);
     }
-    .stack-technic {
-      margin: 10px;
-      padding: 5px;
+    .soft_hard-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .titles-stack {
+    .skills-titles {
       font-size: x-large;
-      text-transform: uppercase;
-      color: black;
+      margin: 2.5em;
+    }
+    .skills {
+      margin: 15px;
+      padding: 15px;
+      background-color: rgb(255, 103, 99);
+    }
+    .stack-tech {
+      display: flex;
+      flex-direction: column;
     }
     .logos {
       padding: 10px;

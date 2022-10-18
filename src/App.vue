@@ -16,7 +16,7 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
   }
   body{
-    background-color: black;
+    background-color: rgb(4, 7, 53);
     color: white;
   }
   .titles-components {
