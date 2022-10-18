@@ -17,12 +17,11 @@ export default {
   }
   body{
     background-color: black;
-    color:white;
+    color: white;
   }
   .titles-components {
       text-transform: uppercase;
-      color: white;
-      margin-left: 25px;
+      color: rgb(255, 103, 99);
     }
 
 </style>

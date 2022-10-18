@@ -28,23 +28,20 @@
           </p>
       </section> 
       <section class="stack-technic">
-        <h3 class="titles">
+        <h3 class="titles-stack">
           Stack technique
         </h3>
         <div class="logos">
           <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
           <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
           <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
+          <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
           <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
-          <img class="logo-techs" alt="logo-js" src="../assets/javascript.svg">
-          <img class="logo-techs" alt="logo-mysql" src="../assets/mysql.svg">
           <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
           <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
-          <img class="logo-techs" alt="logo-git" src="../assets/git.svg">
         </div> 
       </section>
         </div>
-        
     </div>
 </template>
 
@@ -56,45 +53,159 @@
 
 <style scoped>
   
-  .titles-components {
-    text-transform: uppercase;
-    color: white;
-    margin-left: 25px;
-  }
-
+  /*Smartphone Version*/
   @media screen and (max-width: 767px) {
     
-    .about-me {
-      /*width: 15em;*/
-      text-align: start;
-      padding: 15px 20px;
-      background-color: rgb(255, 103, 99);
+    .block-container {
+      background-color: rgb(249, 215, 215);
       display: flex;
-      flex-wrap: wrap;
-      /*justify-content: flex-start;*/
+      flex-direction: column;
+      align-items: center;
+      margin: 5px;
+    }
+
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px 20px;
+      color: white;
     }
     .titles {
       font-size: large;
       text-transform: uppercase;
+      color: black;
     }
     p {
-      width: 15em;
+      /*width: 15em;*/
+      color: black;
     }
     .stack-technic {
-      /*width: 15em;*/
-      text-align: start;
-      padding: 15px 20px;
-      background-color: black;
+      margin: 10px;
       display: flex;
       flex-wrap: wrap;
-      /*justify-content: flex-start;*/
+      justify-content: center;
+    }
+    .titles-stack {
+      font-size: large;
+      text-transform: uppercase;
+      color: black;
     }
     .logos {
-      background-color: white;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .logo-techs {
       width: 50px;
       margin: 10px;
     }
   }
+
+  /*Tablet Version*/
+  @media screen and (min-width: 768px) {
+
+    .block-container {
+      background-color: rgb(249, 215, 215);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px;
+    }
+    .titles-components {
+      font-size: xx-large;
+    }
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px 20px;
+      color: white;
+    }
+    .titles {
+      font-size: x-large;
+      text-transform: uppercase;
+      color: black;
+    }
+    p {
+      margin: 5px;
+      font-size: 1.5em;
+      color: black;
+    }
+    .stack-technic {
+      padding: 15px 20px;
+      margin: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .titles-stack {
+      font-size: x-large;
+      text-transform: uppercase;
+      color: black;
+    }
+    .logos {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo-techs {
+      width: 5em;
+      margin: 2em;
+    }
+  }
+
+  /*Desktop Version*/
+  @media screen and (min-width: 1200px) {
+    .block-container {
+      background-color: rgb(249, 215, 215);
+      margin: 30px;
+    }
+    .titles-components {
+      font-size: xxx-large;
+    }
+    .container-one {
+      display: flex;
+      align-items: baseline;
+    }
+    .about-me {
+      margin: 10px;
+      padding: 5px;
+      text-align: start;
+    }
+    .titles {
+      font-size: x-large;
+      text-transform: uppercase;
+      color: black;
+    }
+    p {
+      margin: 5px;
+      font-size: 1.5em;
+      color: black;
+    }
+    .stack-technic {
+      margin: 10px;
+      padding: 5px;
+    }
+    .titles-stack {
+      font-size: x-large;
+      text-transform: uppercase;
+      color: black;
+    }
+    .logos {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo-techs {
+      width: 5em;
+      margin: 2em;
+    }
+  }
+
 </style>
