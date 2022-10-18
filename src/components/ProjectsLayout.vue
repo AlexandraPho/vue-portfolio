@@ -4,30 +4,56 @@
           Mes projets
       </h2>
       <div class="container">
-        <section class="container-one">
-          <div class="titles-one">
+        <section class="card">
+          <div class="titles">
+            <h3 class="project-titles">
+              Portfolio
+            </h3>
+            <p>
+              Mon portfolio (celui que vous visualisez actuellement)
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
+          </div>
+          <div class="stack">
+            <p class="stack-sticker-v">Vue.js</p>
+          </div>
+          <a href=""></a>
+        </section>
+        <section class="card">
+          <div class="titles">
             <h3 class="project-titles">
               Spotart
             </h3>
-            <h4>
-              2022
-            </h4>
+            <p>
+              Découvrir des oeuvres d'art
+            </p>
           </div>
           <div class="project-img">
-           <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
+            <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
           </div>
+          <div class="stack">
+            <p class="stack-sticker-w">Wordpress</p>
+            <p class="stack-sticker-v">Vue.js</p>
+          </div>
+          <a href=""></a>
         </section>
-        <section class="container-two">
-          <div class="titles-two">
+        <section class="card">
+          <div class="titles">
             <h3 class="project-titles">
               O'cuisine
             </h3>
-            <h4>
-              2022
-            </h4>
+            <p>
+              Site de recettes de cuisines
+            </p>
           </div>
           <div class="project-img">
             <img src="../assets/ocuisine.jpg" alt="projet ocuisine" width="200px">
+          </div>
+          <div class="stack">
+            <p class="stack-sticker-w">Wordpress</p>
+            <p class="stack-sticker-v">Vue.js</p>
           </div>
         </section> 
       </div>
@@ -35,43 +61,147 @@
   </template>
   
   <script>
-  export default {
-    name: "ProjectsLayout"
+    export default {
+      name: "ProjectsLayout",
   }
   </script>
   
-  <style scoped>
 
+  <style scoped>
+  /*Smartphone version*/
   @media screen and (max-width: 767px) {
       .block-container {
-        
-      }
-      .container {
-        margin-top: 3em;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .container-one {
-        padding: 15px 20px;
-        background-color: white;
-        color: black;
-        width: 85%;
+      .container {
+        margin-top: 3em;
+      }
+      .card {
+        background-color: rgb(255, 103,99);
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+      .stack-sticker-w{
+        background-color: #404078;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+      .stack {
+        display: flex;
+      }
+      .stack-sticker-v {
+        background-color: #0e6e22;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      p {
+        color: rgb(191, 191, 196);
+      }
+  }
+
+  /*Tablet version*/
+  @media screen and (min-width: 768px) {
+      .block-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+      .container {
+        margin-top: 3em;
+        width: 40em;
+      }
+      .card {
+        background-color: rgb(255, 103,99);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+      .titles {
+        font-size: x-large;
       }
       .project-img {
         justify-content: flex-end;
         display: flex;
         margin: 10px;
       }
-      .container-two {
-        padding: 15px 20px;
-        background-color: rgb(255, 103, 99);
+      .stack-sticker-w{
+        background-color: #404078;
         color: white;
-        width: 85%;
+        padding: 5px;
+        border-radius: 3px;
+        margin-right: 5px;
       }
-      h4 {
-        font-weight: 100;
+      .stack {
+        display: flex;
       }
-   
+      .stack-sticker-v {
+        background-color: #0e6e22;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      p {
+        color: rgb(191, 191, 196);
+      }
+  }
+
+  /*Desktop version*/
+  @media screen and (min-width: 1200px) {
+      .block-container {
+        margin: 20px;
+      }
+      .titles-components {
+        font-size: xxx-large;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        background-color: rgb(255, 103,99);
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        width: 20em;
+      }
+      .titles {
+        font-size: x-large;
+      }
+      .project-img {
+        justify-content: flex-end;
+        display: flex;
+        margin: 10px;
+      }
+      .stack-sticker-w{
+        background-color: #404078;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+      .stack {
+        display: flex;
+      }
+      .stack-sticker-v {
+        background-color: #0e6e22;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      p {
+        color: rgb(191, 191, 196);
+      }
   }
   </style>
