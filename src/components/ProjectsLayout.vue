@@ -13,9 +13,7 @@
               Mon portfolio (celui que vous visualisez actuellement)
             </p>
           </div>
-          <div class="project-img">
-            <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
-          </div>
+          <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart">
           <div class="stack">
             <p class="stack-sticker-v">Vue.js</p>
           </div>
@@ -30,9 +28,7 @@
               Découvrir des oeuvres d'art
             </p>
           </div>
-          <div class="project-img">
-            <img src="../assets/spotart.jpg" alt="projet spotart" width="200px">
-          </div>
+            <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart" width="200px">
           <div class="stack">
             <p class="stack-sticker-w">Wordpress</p>
             <p class="stack-sticker-v">Vue.js</p>
@@ -48,9 +44,7 @@
               Site de recettes de cuisines
             </p>
           </div>
-          <div class="project-img">
-            <img src="../assets/ocuisine.jpg" alt="projet ocuisine" width="200px">
-          </div>
+            <img class="project-img" src="../assets/ocuisine.jpg" alt="projet ocuisine" width="200px">
           <div class="stack">
             <p class="stack-sticker-w">Wordpress</p>
             <p class="stack-sticker-v">Vue.js</p>
@@ -68,6 +62,11 @@
   
 
   <style scoped>
+
+  .project-img {
+    width: 10em;
+  }
+  
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
       .block-container {
