@@ -41,7 +41,7 @@
 
 <style scoped>
   .container {
-    background-color: black;
+    background-color: rgb(4, 7, 53);
     z-index: 1;
     width: 95%;
     position: absolute;

@@ -14,20 +14,6 @@
             <textarea name="message"></textarea>
             <input type="submit" value="Envoyer">
           </form>
-            <div id="social-links">
-                <a href="">
-                    <div class="link">
-                        <img src="../assets/github.svg" class="img-link" alt="Github">
-                        <h3>Github</h3>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="link">
-                        <img src="../assets/linkedin.svg" class="img-link" alt="LinkdIn">
-                        <h3>LinkdIn</h3>
-                    </div>
-                </a>
-            </div>
         </section> 
       </div>
     </div>
@@ -56,9 +42,6 @@
       background-color: white;
       color: black;
     }
-    .contact-me {
-     
-    }
     form {
       display: flex;
       flex-direction: column;
@@ -70,27 +53,11 @@
       flex-direction: column;
       align-items: center;
     }
-    #social-links {
-      display: flex;
-      justify-content: center;
-    }
+    
     p {
       Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: normal;
     }
-    a {
-        color: black;
-        text-decoration: none;
-        Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: normal;
-    }
-    .link {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-    .img-link,
     .logo-mail {
         width: 5rem;
         border-radius: 70px;

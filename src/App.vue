@@ -15,8 +15,11 @@ export default {
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
   }
+  p {
+        font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    }
   body{
-    background-color: black;
+    background-color: rgb(4, 7, 53);
     color:white;
   }
   .titles-components {
