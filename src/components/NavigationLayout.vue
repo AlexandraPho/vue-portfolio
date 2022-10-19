@@ -15,7 +15,6 @@
               <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
-            <div class="CV-button">Mon CV</div>
           </nav>
         
     </div>
@@ -41,7 +40,7 @@
 
 <style scoped>
   .container {
-    background-color: black;
+    background-color: rgb(4, 7, 53);
     z-index: 1;
     width: 95%;
     position: absolute;
@@ -61,7 +60,7 @@
     padding: 0;
   }
   li {
-    color: white;
+    color: rgb(255, 103, 99);
     padding: 0 10px;
   }
   a {
@@ -73,7 +72,6 @@
   @media screen and (max-width: 767px) {
     .container {
       padding: 5px;
-      
     }
     .menu-header {
       display: flex;
@@ -116,13 +114,7 @@
     li {
       margin: 10px;
     }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
-      padding: 5px;
-      margin: 15px;
-    }
+    
   }
 
   /*Tablet version*/
@@ -173,18 +165,13 @@
     }
     li {
       margin: 10px;
+      font-size: 25px;
     }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
-      padding: 5px;
-      margin: 15px;
-    }
+    
   }
 
   /*Desktop version*/
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     .container {
       padding: 10px;
       width: 100%;

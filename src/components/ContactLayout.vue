@@ -15,6 +15,7 @@
             <input type="submit" value="Envoyer">
           </form>
             <div id="social-links">
+              <div class="CV-button">Mon CV</div>
                 <a href="">
                     <div class="link">
                         <img src="../assets/github.svg" class="img-link" alt="Github">
@@ -95,6 +96,19 @@
         width: 5rem;
         border-radius: 70px;
     }
-
+    .CV-button {
+      color: white;
+      border-radius: 5px;
+      border: solid 1px rgb(255, 103, 99);
+      padding: 5px;
+      margin: 15px;
+    }
+    .CV-button {
+      color: white;
+      border-radius: 5px;
+      border: solid 1px rgb(255, 103, 99);
+      padding: 5px;
+      margin: 15px;
+    }
     
   </style>
