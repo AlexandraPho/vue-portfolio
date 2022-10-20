@@ -16,7 +16,6 @@
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
           </nav>
-        
     </div>
   </div>
 </template>
@@ -66,7 +65,6 @@
   a {
     text-decoration: none;
   }
-
   /*Mobile version - hidden hamburger menu*/
   
   @media screen and (max-width: 767px) {
@@ -115,15 +113,8 @@
     li {
       margin: 10px;
     }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(115, 16, 61);
-      padding: 5px;
-      margin: 15px;
-    }
-  }
 
+  }
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .container {
@@ -175,17 +166,10 @@
       font-size: 25px;
       margin: 10px;
     }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(115, 16, 61);
-      padding: 5px;
-      margin: 15px;
-    }
   }
-
+  
   /*Desktop version*/
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     .container {
       padding: 10px;
       width: 100%;
@@ -214,14 +198,6 @@
     li {
       margin: 10px;
       font-size: 1.2em;
-    }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
-      padding: 5px;
-      font-size: 1.1em;
-      margin: 5px 60px;
     }
   }
   
