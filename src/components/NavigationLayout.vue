@@ -16,7 +16,6 @@
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
           </nav>
-        
     </div>
   </div>
 </template>
@@ -67,8 +66,8 @@
     text-decoration: none;
   }
   /*Mobile version - hidden hamburger menu*/
-  
   @media screen and (max-width: 767px) {
+
     .menu-header {
       display: flex;
       justify-content: space-between;
@@ -114,6 +113,7 @@
       margin: 10px;
     }
   }
+  
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .container {
