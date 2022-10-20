@@ -2,18 +2,16 @@
   <div class="block-container">
     <section id="information">
       <div class="profil">
-        <p>
-          <strong>Bienvenue !</strong>
-            <br>
-          Je suis Alexandra une jeune développeuse en herbe. 
-          Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets.
-        </p>
+          <h1>Bienvenue !</h1>
+          <p>  
+            Je suis Alexandra une jeune développeuse en herbe. 
+            Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets.
+          </p>
       </div>
       <div class="profile-image">
           <img src="../assets/personal-img.png" class="perso-img" alt="profile-image">
       </div>
     </section>
-    
   </div>
 </template>
 
@@ -24,96 +22,95 @@
 </script>
 
 <style scoped>
-  .block-container {
-    background-color: rgb(243, 241, 241);
-  }
+  
  .profil {
   margin-top: 1em;
+ }
+ h1 {
+  color: rgb(115, 16, 61);
  }
     /*Smartphone version*/
 @media only screen and (max-width: 767px) {
     .block-container {
-      margin: 50px 0px 0px;
+      margin: 40px 0px;
+      background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../assets/personal-img.png');
+      background-size: cover;
+      height: 40em;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0px 20px;
+      align-content: flex-end;
     }
     #information {
       display: flex;
+      text-align: start;
+      padding-bottom: 50px;
       flex-direction: column;
-      text-align: center;
-      padding: 20px;
-
     }
     p {
-      font-size: 20px;
+      font-size: 15px;
       margin: 5px;
+      width: 15em;
     }
-    .profile-image {
-      margin: 20px 10px 50px 10px;
-    }
-    }
-    .perso-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-    }
-
+    
+  }
 /*Tablet version*/
 @media only screen and (min-width: 768px) {
   .block-container {
-    margin: 90px 0px 0px;
-    height: 40em;
-    }
-    #information {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding: 20px;
-    }
-    p {
-      font-size: 30px;
-      margin: 5px;
-    }
-    .profil {
-      padding: 2em;
-    }
-    .profile-image {
-      margin: 20px 10px 50px 10px;
-    }
-    .perso-img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-    }
+    margin: 40px 0px;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../assets/personal-img.png');
+    background-size: cover;
+    height: 70em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    align-content: flex-end;
+  }
+  #information {
+    display: flex;
+    padding-bottom: 60px;
+    text-align: start;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+    margin: 5px;
+    width: 25em;
+  }
 }
 
 /*Desktop version*/
 @media only screen and (min-width: 1200px) {
-    .block-container {
-      margin: 60px 0px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-      align-items: center;
-    }
-    #information {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin: 2em;
-      margin-right: 10em;
-    }
-    .profil {
-      justify-content: center;
-      width: 40em;
-      text-align: left;
-      margin: 1em;
-    }
-    p {
-      font-size: 30px;
-      margin: 20px 40px;
-    }
-    .perso-img {
-      width: 18em;    
-    }
+  .block-container {
+    margin: 40px 0px;
+    background-image: none;
+    background-size:cover;
+    height: 50em;
+    padding: 0px 20px;
+    
+  }
+  #information {
+    display: flex;
+    /* padding-bottom: 60px; */
+    /* text-align: start; */
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+    margin: 5px;
+    width: 40em;
+  }
+  .perso-img {
+    width: 300px;
+    filter: opacity(50%);
+    margin: 3em;
+  }
 }
 </style>

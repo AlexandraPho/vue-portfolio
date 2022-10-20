@@ -43,6 +43,7 @@
     z-index: 1;
     width: 100%;
     position: absolute;
+    padding-top: 20px;
   }
   .nav-content {
     display: flex;
