@@ -28,6 +28,13 @@
           </div>
       </a>
     </section>
+    <div class="resume">
+      <p>Télécharger mon CV 
+          <a class="resume-document" href="" download="CV Alexandra Pinheiro">
+            <strong>ici</strong>
+          </a>
+        </p>
+    </div>
   </div>
 </template>
 
