@@ -12,16 +12,17 @@ export default {
 
 <style>
 
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-  }
+  p {
+      font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    }
   body{
-    background-color: rgb(4, 7, 53);
-    color: white;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
   }
   .titles-components {
-      text-transform: uppercase;
-      color: rgb(255, 103, 99);
-    }
-
+    text-transform: uppercase;
+    color: rgb(115, 16, 61);
+  }
 </style>

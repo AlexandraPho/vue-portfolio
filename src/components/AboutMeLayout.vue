@@ -1,7 +1,7 @@
 <template>
     <div class="block-container">
       <h2 class="titles-components">
-          Je suis...
+          Présentation
       </h2>
         <div class="container-one">
             <section class="about-me">
@@ -21,7 +21,7 @@
               </p>
             </section>
             <section class="soft_hard-skills">
-              <h3 class="skills-titles">
+              <h3 class="titles">
                 Mes Soft & hard skills
               </h3>
               <div class="soft-skills">
@@ -31,7 +31,7 @@
                 <span class="skills">Communication</span>
               </div>
               <div class="stack-tech">
-                <p>Les outils techs que j'utilise</p>
+                <h4>Les outils techs que j'utilise</h4>
                 <div class="logos">
                   <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
                   <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
@@ -55,6 +55,10 @@
 
 <style scoped>
   
+  .block-container {
+    background-color: rgb(243, 241, 241);
+  }
+
   /*Smartphone Version*/
   @media screen and (max-width: 767px) {
     
@@ -62,24 +66,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 5px;
+      margin: 10px 0px;
     }
-
     .about-me {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 10px 15px;
-      color: white;
+      padding: 10px;
+      color: rgb(49, 49, 49);
     }
     .titles {
       font-size: large;
       text-transform: uppercase;
-      color: white;
+      color: black;
     }
     p {
-      color: rgb(191, 191, 196);
+      color: rgb(77, 82, 72);
+      width: 15em;
     }
     .soft_hard-skills {
       display: flex;
@@ -94,17 +98,22 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding: 20px;
     }
     .skills {
       margin: 5px;
       padding: 5px;
-      background-color: rgb(255, 103, 99);
+      background-color: rgb(115, 16, 61);
     }
     .stack-tech {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin: 1.5em;
+    }
+    h4 {
+      font-weight: 200;
+      font-size: large;
     }
     .logos {
       padding: 10px;
@@ -125,7 +134,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 30px;
+      margin: 30px 0px;
     }
     .titles-components {
       font-size: xx-large;
@@ -135,18 +144,19 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 15px 20px;
+      padding: 15px;
       color: white;
     }
     .titles {
       font-size: x-large;
       text-transform: uppercase;
-      color: white;
+      color: black;
     }
     p {
       margin: 5px;
       font-size: 1.5em;
-      color: rgb(191, 191, 196);
+      color: rgb(77, 82, 72);
+      width: 25em;
     }
     .soft_hard-skills {
       display: flex;
@@ -157,16 +167,23 @@
       font-size: x-large;
       margin: 2.5em;
     }
+    .soft-skills {
+      margin: 2em;
+    }
     .skills {
       margin: 15px;
       padding: 15px;
-      background-color: rgb(255, 103, 99);
+      background-color: rgb(115, 16, 61);
     }
     .stack-tech {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 3em;
+      margin: 4em;
+    }
+    h4 {
+      font-weight: 200;
+      font-size: x-large;
     }
     .logos {
       padding: 10px;
@@ -183,57 +200,67 @@
   /*Desktop Version*/
   @media screen and (min-width: 1200px) {
     .block-container {
-      margin: 30px;
-    }
-    .titles-components {
-      font-size: xxx-large;
+      margin: 60px 0px;
     }
     .container-one {
-     
+      display: flex;
+      align-items: baseline;
+    }
+    .titles-components {
+      font-size: xx-large;
     }
     .about-me {
-      margin: 10px;
       padding: 5px;
       text-align: start;
+      margin-right: 30px;
     }
     .titles {
       font-size: x-large;
       text-transform: uppercase;
-      color: white;
+      color: black;
     }
     p {
-      text-align: center;
+      width: 20em;
       margin: 5px;
       font-size: 1.5em;
-      color: rgb(191, 191, 196);
+      color: rgb(77, 82, 72);
     }
     .soft_hard-skills {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin-left: 30px;
     }
     .skills-titles {
       font-size: x-large;
       margin: 2.5em;
+      color: black;
+    }
+    .soft-skills {
+      margin: 10px;
+      display: flex;
+      width: 30em;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .skills {
       margin: 15px;
       padding: 15px;
-      background-color: rgb(255, 103, 99);
+      background-color: rgb(115, 16, 61);
+      color: white;
     }
     .stack-tech {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
     .logos {
       padding: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: 30em;
     }
     .logo-techs {
-      width: 5em;
-      margin: 2em;
+      width: 4em;
+      margin: 1em;
     }
   }
 
