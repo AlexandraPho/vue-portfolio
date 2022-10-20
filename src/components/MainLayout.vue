@@ -3,38 +3,17 @@
     <section id="information">
       <div class="profil">
         <p>
-          <strong>Bienvenue</strong> sur mon portfolio. 
-            </p>
+          <strong>Bienvenue !</strong>
             <br>
-            <p>
-                  Je suis Alexandra une jeune développeuse en herbe. 
-            </p>
+          Je suis Alexandra une jeune développeuse en herbe. 
+          Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets.
+        </p>
       </div>
       <div class="profile-image">
           <img src="../assets/personal-img.png" class="perso-img" alt="profile-image">
       </div>
     </section>
-    <section id="social-links">
-      <a href="https://github.com/AlexandraPho">
-          <div class="link">
-            <img src="../assets/github.svg" class="img-link" alt="Github">
-            <h3>Github</h3>
-          </div>
-      </a>
-      <a href="https://www.linkedin.com/in/alexandra-pinheiro/">
-          <div class="link">
-              <img src="../assets/linkedin.svg" class="img-link" alt="Linkdin">
-              <h3>LinkdIn</h3>
-          </div>
-      </a>
-    </section>
-    <div class="resume">
-      <p>Télécharger mon CV 
-          <a class="resume-document" href="" download="CV Alexandra Pinheiro">
-            <strong>ici</strong>
-          </a>
-        </p>
-    </div>
+    
   </div>
 </template>
 
@@ -45,16 +24,11 @@
 </script>
 
 <style scoped>
-  #social-links {
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    margin: 5px;
-    }
+  
+  
   .perso-img {
-    box-shadow: -20px 30px rgb(255 103 99);
+    box-shadow: -20px 30px 0.6em rgb(115 16 61);
+    border-radius: 15px;
   }
       
     /*Smartphone version*/
@@ -77,14 +51,6 @@
     .perso-img {
       width: 10em;
     }
-    #social-links {
-      display: flex;
-      justify-content: space-around;
-      margin: 4em;
-    }
-    .img-link {
-      width: 3em;
-    }
 }
 
 /*Tablet version*/
@@ -103,7 +69,7 @@
       margin: 5px;
     }
     .profil {
-      margin: 2em;
+      margin-right: 2em;
     }
     .profile-image {
       margin: 5em;
@@ -111,20 +77,16 @@
     .perso-img {
       width: 15em;
     }
-    #social-links {
-      display: flex;
-      justify-content: space-around;
-      margin: 4em;
-    }
-    .img-link {
-      width: 5em;
-    }
 }
 
 /*Desktop version*/
 @media only screen and (min-width: 1200px) {
     .block-container {
-        margin: 60px 20px;
+      margin: 60px 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: baseline;
     }
     #information {
       display: flex;
@@ -132,34 +94,20 @@
       justify-content: center;
       align-items: center;
       margin: 2em;
+      margin-right: 10em;
     }
-    #profile {
+    .profil {
       justify-content: center;
       width: 40em;
-      text-align: center;
-      margin: 2em;
+      text-align: left;
+      margin: 1em;
     }
     p {
       font-size: 30px;
       margin: 20px 40px;
     }
-    .profile-image {
-      margin: 130px 10px 10px 40px; 
-    }
     .perso-img {
       width: 18em;    
-    }
-    #social-links {
-      display: flex;
-      justify-content: flex-start;
-    }
-    .img-link {
-      width: 4em;
-    }
-    .link {
-      display: flex;
-      margin: 20px;
-      flex-direction: column;
     }
 }
 </style>
