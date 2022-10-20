@@ -13,8 +13,8 @@ export default {
 <style>
 
   p {
-      font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
-    }
+    font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+  }
   body{
     font-family: Avenir, Helvetica, Arial, sans-serif;
     background-color: white;
@@ -25,4 +25,5 @@ export default {
     text-transform: uppercase;
     color: rgb(115, 16, 61);
   }
+  
 </style>

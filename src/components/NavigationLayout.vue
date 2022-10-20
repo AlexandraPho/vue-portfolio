@@ -68,6 +68,7 @@
   /*Mobile version - hidden hamburger menu*/
   
   @media screen and (max-width: 767px) {
+
     .menu-header {
       display: flex;
       justify-content: space-between;
@@ -112,6 +113,7 @@
     li {
       margin: 10px;
     }
+
   }
   /*Tablet version*/
   @media screen and (min-width: 768px) {
@@ -165,6 +167,7 @@
       margin: 10px;
     }
   }
+  
   /*Desktop version*/
   @media screen and (min-width: 1200px) {
     .container {
