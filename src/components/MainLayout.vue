@@ -88,11 +88,11 @@
 /*Desktop version*/
 @media only screen and (min-width: 1200px) {
     .block-container {
-      margin: 60px 20px;
+      margin: 60px 0px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-around;
-      align-items: baseline;
+      align-items: center;
     }
     #information {
       display: flex;
