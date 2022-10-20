@@ -41,7 +41,7 @@
 
 <style scoped>
   .container {
-    background-color: rgb(4, 7, 53);
+    background-color: rgb(110, 118, 53);
     z-index: 1;
     width: 95%;
     position: absolute;
@@ -73,16 +73,16 @@
   @media screen and (max-width: 767px) {
     .container {
       padding: 5px;
-      
     }
     .menu-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: rgb(115, 16, 61);
       }
     .header-logo {
       font-size: 20px;
-      color: rgb(255, 103, 99);
+      
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin: 0px;
@@ -119,7 +119,7 @@
     .CV-button {
       color: white;
       border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
+      border: solid 1px rgb(115, 16, 61);
       padding: 5px;
       margin: 15px;
     }
@@ -139,7 +139,7 @@
       }
     .header-logo {
       font-size: 20px;
-      color: rgb(255, 103, 99);
+      color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin: 0px;
@@ -177,7 +177,7 @@
     .CV-button {
       color: white;
       border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
+      border: solid 1px rgb(115, 16, 61);
       padding: 5px;
       margin: 15px;
     }
@@ -194,7 +194,7 @@
     }
     .header-logo {
       font-size: 30px;
-      color: rgb(255, 103, 99);
+      color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }

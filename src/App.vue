@@ -16,16 +16,16 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
   }
   p {
-        font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
     }
   body{
-    background-color: rgb(4, 7, 53);
-    color:white;
+    background-color: white;
+    color:rgb(49, 48, 48);
   }
   .titles-components {
-      text-transform: uppercase;
-      color: white;
-      margin-left: 25px;
+    text-transform: uppercase;
+    color: rgb(115, 16, 61);
+    margin-left: 25px;
     }
 
 </style>
