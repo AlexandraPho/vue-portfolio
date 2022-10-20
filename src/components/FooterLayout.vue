@@ -49,8 +49,11 @@
     @media only screen and (max-width: 767px) {
       footer {
         background-color: white;
-        display: flex;
-        flex-direction: column;
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+        right: 0;
+        margin-bottom: 20px;
       }
       #social-links {
         display: flex;
@@ -64,8 +67,11 @@
     @media only screen and (min-width: 768px) {
       footer {
         background-color: white;
-        display: flex;
-        flex-direction: column;
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+        right: 0;
+        margin-bottom: 20px;
       }
       #social-links {
         display: flex;

@@ -24,58 +24,64 @@
 </script>
 
 <style scoped>
-  
-  
-  .perso-img {
-    box-shadow: -20px 30px 0.6em rgb(115 16 61);
-    border-radius: 15px;
+  .block-container {
+    background-color: rgb(243, 241, 241);
   }
-      
+ .profil {
+  margin-top: 1em;
+ }
     /*Smartphone version*/
 @media only screen and (max-width: 767px) {
     .block-container {
-      margin: 40px 10px;
+      margin: 50px 0px 0px;
     }
     #information {
       display: flex;
       flex-direction: column;
       text-align: center;
+      padding: 20px;
+
     }
     p {
       font-size: 20px;
       margin: 5px;
     }
     .profile-image {
-      margin: 40px 10px 10px 20px;
+      margin: 20px 10px 50px 10px;
+    }
     }
     .perso-img {
-      width: 10em;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
     }
-}
 
 /*Tablet version*/
 @media only screen and (min-width: 768px) {
   .block-container {
-      margin: 60px 10px;
+    margin: 90px 0px 0px;
+    height: 40em;
     }
     #information {
       display: flex;
       flex-direction: column;
       text-align: center;
-      margin: 4em;
+      padding: 20px;
     }
     p {
       font-size: 30px;
       margin: 5px;
     }
     .profil {
-      margin-right: 2em;
+      padding: 2em;
     }
     .profile-image {
-      margin: 5em;
+      margin: 20px 10px 50px 10px;
     }
     .perso-img {
-      width: 15em;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
     }
 }
 

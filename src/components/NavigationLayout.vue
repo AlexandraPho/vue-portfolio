@@ -40,9 +40,9 @@
 
 <style scoped>
   .container {
-    background-color: rgb(110, 118, 53);
+    background-color: white;
     z-index: 1;
-    width: 95%;
+    width: 100%;
     position: absolute;
   }
   .nav-content {
@@ -60,7 +60,7 @@
     padding: 0;
   }
   li {
-    color: white;
+    color: rgb(115, 16, 61);
     padding: 0 10px;
   }
   a {
@@ -70,9 +70,7 @@
   /*Mobile version - hidden hamburger menu*/
   
   @media screen and (max-width: 767px) {
-    .container {
-      padding: 5px;
-    }
+
     .menu-header {
       display: flex;
       justify-content: space-between;
@@ -80,14 +78,16 @@
       color: rgb(115, 16, 61);
       }
     .header-logo {
-      font-size: 20px;
-      
+      font-size: 15px;
+      color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin: 0px;
+      padding: 10px;
     }
     .img-burger-menu {
       width: 25px;
+      padding: 5px;
     }
     .nav-content {
       flex-direction: column;
@@ -127,9 +127,8 @@
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .container {
-      padding: 15px;
       position: absolute;
-      width: 95%;
+      width: 100%;
     }
     .menu-header {
       display: flex;
@@ -137,14 +136,16 @@
       align-items: center;
       }
     .header-logo {
-      font-size: 20px;
+      font-size: 25px;
       color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin: 0px;
+      padding: 20px;
     }
     .img-burger-menu {
-      width: 25px;
+      width: 30px;
+      padding: 20px;
     }
     .nav-content {
       flex-direction: column;
@@ -171,6 +172,7 @@
       align-items: center;
     }
     li {
+      font-size: 25px;
       margin: 10px;
     }
     .CV-button {
@@ -211,7 +213,7 @@
     }
     li {
       margin: 10px;
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
     .CV-button {
       color: white;
