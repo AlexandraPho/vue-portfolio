@@ -15,7 +15,6 @@
               <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
-            <div class="CV-button">Mon CV</div>
           </nav>
         
     </div>

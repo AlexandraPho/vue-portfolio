@@ -17,15 +17,22 @@ export default {
   }
   p {
     font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+  }
+
     }
+
   body{
     background-color: white;
     color:rgb(49, 48, 48);
   }
   .titles-components {
     text-transform: uppercase;
+
+
+
     color: rgb(115, 16, 61);
-    margin-left: 25px;
+
+
     }
 
 </style>
