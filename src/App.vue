@@ -25,5 +25,4 @@ export default {
     text-transform: uppercase;
     color: rgb(115, 16, 61);
   }
-  
 </style>

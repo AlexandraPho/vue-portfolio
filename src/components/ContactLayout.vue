@@ -42,17 +42,36 @@
   
   <style scoped>
 
-    .container-one {
-      background-color: rgb(4, 7, 55);
-      color: white;
-    }
+    .block-container {
+        background-color: rgb(243, 241, 241);
+      }
+      .input-field,
+      .input-message {
+        border-radius: 0.5em;
+        border-top: none; 
+        border-right: none; 
+        border-left: none;
+      }
+      .button {
+        background-color: rgb(115, 16, 61);
+        color: white;
+        border-radius: 0.5em;
+        border: 1px solid rgb(115, 16, 61);
+      }
+      .button:hover {
+        background-color:rgb(51, 77, 11);
+        color: white;
+        cursor: pointer;
+      }
+
+
     /*Smartphone Version*/
     @media only screen and (max-width: 767px) {
       .block-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 40px 20px;
+        margin: 40px 0px;
       }
       form {
         display: flex;
@@ -71,7 +90,6 @@
         margin: 0.5em;
       }
       .input-field {
-        border-radius: 0.5em;
         height: 1.5em;
       }
       .input-message {
@@ -81,10 +99,6 @@
       .button {
         margin: 2em;
         padding: 1em;
-        background-color: rgb(4, 7, 55);
-        color: rgb(255, 103, 99);
-        border-radius: 0.5em;
-        border: 1px solid rgb(255, 103, 99);
       }
     }
     /*Tablet version*/
@@ -93,7 +107,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 8em 2em;
+        margin: 40px 0px;
       }
       form {
         display: flex;
@@ -124,17 +138,8 @@
       .button {
         margin: 2em;
         padding: 1em;
-        background-color: rgb(4, 7, 55);
-        color: rgb(255, 103, 99);
-        border-radius: 0.5em;
-        border: 1px solid rgb(255, 103, 99);
         width: 10em;
         font-size: large;
-      }
-      .button:hover {
-        background-color:rgb(255, 103, 99);
-        color: rgb(4, 7, 55);
-        cursor: pointer;
       }
     }
 
@@ -144,10 +149,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 7em 2em;
+        margin: 50px 0px;
       }
       .titles-components {
-        font-size: xxx-large;
+        font-size: xx-large;
       }
       form {
         display: flex;
@@ -156,7 +161,7 @@
         padding: 1em;
       }
       label {
-        font-size: x-large;
+        font-size: large;
       }
       .field {
         display: flex;
@@ -175,10 +180,10 @@
       .button {
         margin: 2em;
         padding: 1em;
-        background-color: rgb(4, 7, 55);
-        color: rgb(255, 103, 99);
+        background-color: rgb(115, 16, 61);
+        color: white;
         border-radius: 0.5em;
-        border: 1px solid rgb(255, 103, 99);
+        border: 1px solid rgb(115, 16, 61);
       }
     }
     

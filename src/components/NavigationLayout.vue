@@ -66,7 +66,6 @@
     text-decoration: none;
   }
   /*Mobile version - hidden hamburger menu*/
-  
   @media screen and (max-width: 767px) {
 
     .menu-header {
@@ -113,8 +112,8 @@
     li {
       margin: 10px;
     }
-
   }
+  
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .container {
