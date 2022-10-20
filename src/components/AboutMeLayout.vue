@@ -5,20 +5,24 @@
       </h2>
         <div class="container-one">
             <section class="about-me">
-              <h3 class="titles">
-                Curieuse
-              </h3>
-              <p>
-                J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
-                L'apprentissage est pour moi une façon de me renouveler constamment.
-              </p>
-              <h3 class="titles">
-                Motivé
-              </h3>
-              <p>
-                En 2020, je  démarre des cours sur diverses plateforme pour apprendre le langage HTML et CSS en autodidacte.
-                En septembre 2021, je rejoint la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
-              </p>
+              <div class="text">
+                <h3 class="titles">
+                  Curieuse
+                </h3>
+                <p>
+                  J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
+                  L'apprentissage est pour moi une façon de me renouveler constamment.
+                </p>
+              </div>
+              <div class="text">
+                <h3 class="titles">
+                  Motivé
+                </h3>
+                <p>
+                  En 2020, je  démarre des cours sur diverses plateformes pour apprendre le langage HTML et CSS en autodidacte.
+                  En septembre 2021, je rejoins la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
+                </p>
+              </div>
             </section>
             <section class="soft_hard-skills">
               <h3 class="titles">
@@ -39,7 +43,6 @@
                   <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
                   <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
                   <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
-                  <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
                 </div> 
               </div>
             </section> 
@@ -107,9 +110,9 @@
     }
     .stack-tech {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       margin: 1.5em;
+      flex-direction: column;
+      align-items: center;
     }
     h4 {
       font-weight: 200;
@@ -134,7 +137,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 30px 0px;
+      padding: 30px 0px;
     }
     .titles-components {
       font-size: xx-large;
@@ -179,7 +182,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 4em;
+      margin: 1.5em;
     }
     h4 {
       font-weight: 200;
@@ -200,7 +203,7 @@
   /*Desktop Version*/
   @media screen and (min-width: 1200px) {
     .block-container {
-      margin: 60px 0px;
+      padding: 50px 0px;
     }
     .container-one {
       display: flex;
@@ -214,15 +217,22 @@
       text-align: start;
       margin-right: 30px;
     }
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5em;
+    }
     .titles {
       font-size: x-large;
       text-transform: uppercase;
       color: black;
     }
     p {
-      width: 20em;
+      text-align: center;
+      width: 25em;
       margin: 5px;
-      font-size: 1.5em;
+      font-size: 1.2em;
       color: rgb(77, 82, 72);
     }
     .soft_hard-skills {
@@ -252,7 +262,6 @@
       align-items: center;
     }
     .logos {
-      padding: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
