@@ -42,10 +42,22 @@
   
   <style scoped>
 
+  .block-container {
+    background-color: rgb(231, 231, 231);
+  }
+
+  /*Smartphone version*/
   @media screen and (max-width: 767px) {
-      .block-container {
-        
-      }
+    .block-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .titles-components {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 80px 10px 30px;
+    }
       .container {
         margin-top: 3em;
         display: flex;

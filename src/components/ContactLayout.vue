@@ -41,17 +41,16 @@
   </script>
   
   <style scoped>
-
     .block-container {
-        background-color: rgb(243, 241, 241);
-      }
-      .input-field,
-      .input-message {
-        border-radius: 0.5em;
-        border-top: none; 
-        border-right: none; 
-        border-left: none;
-      }
+      background-color: rgb(231, 231, 231);
+    }
+    .input-field,
+    .input-message {
+      border-radius: 0.5em;
+      border-top: none; 
+      border-right: none; 
+      border-left: none;
+    }
       .button {
         background-color: rgb(115, 16, 61);
         color: white;

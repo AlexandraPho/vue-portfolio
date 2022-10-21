@@ -1,53 +1,66 @@
 <template>
-    <div class="block-container">
-      <h2 class="titles-components">
-          Présentation
-      </h2>
-        <div class="container-one">
-            <section class="about-me">
-              <div class="text">
-                <h3 class="titles">
-                  Curieuse
-                </h3>
-                <p>
-                  J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
-                  L'apprentissage est pour moi une façon de me renouveler constamment.
-                </p>
-              </div>
-              <div class="text">
-                <h3 class="titles">
-                  Motivé
-                </h3>
-                <p>
-                  En 2020, je  démarre des cours sur diverses plateformes pour apprendre le langage HTML et CSS en autodidacte.
-                  En septembre 2021, je rejoins la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
-                </p>
-              </div>
-            </section>
-            <section class="soft_hard-skills">
-              <h3 class="titles">
-                Mes Soft & hard skills
-              </h3>
-              <div class="soft-skills">
-                <span class="skills">Curieuse</span>
-                <span class="skills">Autonome</span>
-                <span class="skills">Esprit d'équipe</span>
-                <span class="skills">Communication</span>
-              </div>
-              <div class="stack-tech">
-                <h4>Les outils techs que j'utilise</h4>
-                <div class="logos">
-                  <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
-                  <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
-                  <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
-                  <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
-                  <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
-                  <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
-                </div> 
-              </div>
-            </section> 
-        </div>
-    </div>
+  <div class="block-container">
+    
+      <section id="social-links">
+        <a href="https://github.com/AlexandraPho">
+            <div class="link">
+              <img src="../assets/github.svg" class="img-link" alt="Github"> 
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/alexandra-pinheiro/">
+            <div class="link">
+                <img src="../assets/linkedin.svg" class="img-link" alt="Linkdin">        
+            </div>
+        </a>
+      </section>
+    <h2 class="titles-components">
+      Présentation
+    </h2>
+      <div class="container-one">
+        <section class="about-me">
+          <div class="text">
+            <h3 class="titles">
+              Curieuse
+            </h3>
+            <p>
+              J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
+              L'apprentissage est pour moi une façon de me renouveler constamment.
+            </p>
+          </div>
+          <div class="text">
+            <h3 class="titles">
+              Motivé
+            </h3>
+            <p>
+              En 2020, je  démarre des cours sur diverses plateformes pour apprendre le langage HTML et CSS en autodidacte.
+              En septembre 2021, je rejoins la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
+            </p>
+            </div>
+        </section>
+        <section class="soft_hard-skills">
+          <h3 class="titles">
+            Mes Soft & hard skills
+          </h3>
+          <div class="soft-skills">
+            <span class="skills">Curieuse</span>
+            <span class="skills">Autonome</span>
+            <span class="skills">Esprit d'équipe</span>
+            <span class="skills">Communication</span>
+          </div>
+          <div class="stack-tech">
+            <h4>Les outils techs que j'utilise</h4>
+            <div class="logos">
+              <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
+              <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
+              <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
+              <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
+              <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
+              <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
+            </div> 
+          </div>
+        </section> 
+      </div>
+  </div>
 </template>
 
 <script>
@@ -58,18 +71,30 @@
 
 <style scoped>
   
-  .block-container {
-    background-color: rgb(243, 241, 241);
+  .container-one {
+    background-color: rgb(231, 231, 231);
   }
 
   /*Smartphone Version*/
   @media screen and (max-width: 767px) {
-    
+   
     .block-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin: 10px 0px;
+    }
+    #social-links {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .img-link {
+      width: 3.5em;
+    }
+    .titles-components {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 80px 10px 30px;
     }
     .about-me {
       display: flex;
@@ -77,7 +102,6 @@
       align-items: center;
       text-align: center;
       padding: 10px;
-      color: rgb(49, 49, 49);
     }
     .titles {
       font-size: large;
@@ -86,7 +110,7 @@
     }
     p {
       color: rgb(77, 82, 72);
-      width: 15em;
+      width: 17em;
     }
     .soft_hard-skills {
       display: flex;
@@ -105,8 +129,10 @@
     }
     .skills {
       margin: 5px;
-      padding: 5px;
+      padding: 10px;
       background-color: rgb(115, 16, 61);
+      color: white;
+      border-radius: 5px;
     }
     .stack-tech {
       display: flex;
@@ -115,6 +141,7 @@
       align-items: center;
     }
     h4 {
+      color: rgb(77, 82, 72);
       font-weight: 200;
       font-size: large;
     }

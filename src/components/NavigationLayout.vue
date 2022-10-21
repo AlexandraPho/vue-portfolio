@@ -40,10 +40,9 @@
 <style scoped>
   .container {
     background-color: white;
-    z-index: 1;
     width: 100%;
     position: absolute;
-    padding-top: 20px;
+    padding-top: 25px;
   }
   .nav-content {
     display: flex;
@@ -76,7 +75,7 @@
       color: rgb(115, 16, 61);
       }
     .header-logo {
-      font-size: 15px;
+      font-size: 22px;
       color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -84,8 +83,8 @@
       padding: 10px;
     }
     .img-burger-menu {
-      width: 25px;
-      padding: 5px;
+      width: 30px;
+      padding: 10px;
     }
     .nav-content {
       flex-direction: column;
@@ -98,6 +97,7 @@
     .open-menu {
       opacity: 1;
       height: 150px;
+      font-weight: bold;
     }
     .closed-menu {
       opacity: 0;
