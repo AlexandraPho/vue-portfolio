@@ -69,39 +69,58 @@
   
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
-      .block-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .container {
-        margin-top: 3em;
-      }
-      .card {
-        background-color: rgb(255, 103,99);
-        border-radius: 5px;
-        padding: 15px;
-        margin-bottom: 10px;
-      }
-      .stack-sticker-w{
-        background-color: #404078;
-        color: white;
-        padding: 5px;
-        border-radius: 3px;
-        margin-right: 5px;
-      }
-      .stack {
-        display: flex;
-      }
-      .stack-sticker-v {
-        background-color: #0e6e22;
-        color: white;
-        padding: 5px;
-        border-radius: 3px;
-      }
-      p {
-        color: rgb(191, 191, 196);
-      }
+    .block-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titles-components {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 80px 10px 30px;
+    }
+    .container {
+      background-color: rgb(231, 231, 231);
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      color: rgb(77, 82, 72);
+      text-align: center;
+    }
+    .project-img {
+      width: 10em;
+      border-radius: 5px;
+    }
+    .stack {
+      display: flex;
+    }
+    .stack-sticker-w{
+      background-color: #404078;
+      color: white;
+      padding: 5px;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+    .stack-sticker-v {
+      background-color: #0e6e22;
+      color: white;
+      padding: 5px;
+      border-radius: 3px;
+    }
   }
 
   /*Tablet version*/

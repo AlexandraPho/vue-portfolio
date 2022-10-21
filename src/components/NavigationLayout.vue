@@ -15,15 +15,12 @@
               <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
-            <div class="CV-button">Mon CV</div>
           </nav>
-        
     </div>
   </div>
 </template>
 
 <script>
-
   export default {
     data() {
       return {
@@ -36,15 +33,14 @@
       },
     },
   };
-
 </script>
 
 <style scoped>
   .container {
-    background-color: black;
-    z-index: 1;
-    width: 95%;
+    background-color: white;
+    width: 100%;
     position: absolute;
+    padding-top: 25px;
   }
   .nav-content {
     display: flex;
@@ -61,7 +57,7 @@
     padding: 0;
   }
   li {
-    color: white;
+    color: rgb(115, 16, 61);
     padding: 0 10px;
   }
   a {
@@ -69,26 +65,24 @@
   }
 
   /*Mobile version - hidden hamburger menu*/
-  
   @media screen and (max-width: 767px) {
-    .container {
-      padding: 5px;
-      
-    }
     .menu-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: rgb(115, 16, 61);
       }
     .header-logo {
-      font-size: 20px;
-      color: rgb(255, 103, 99);
+      font-size: 22px;
+      color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin: 0px;
+      padding: 10px;
     }
     .img-burger-menu {
-      width: 25px;
+      width: 30px;
+      padding: 10px;
     }
     .nav-content {
       flex-direction: column;
@@ -101,6 +95,7 @@
     .open-menu {
       opacity: 1;
       height: 150px;
+      font-weight: bold;
     }
     .closed-menu {
       opacity: 0;
@@ -116,36 +111,30 @@
     li {
       margin: 10px;
     }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
-      padding: 5px;
-      margin: 15px;
-    }
   }
-
+  
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .container {
-      padding: 15px;
       position: absolute;
-      width: 95%;
+      width: 100%;
     }
     .menu-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      }
+    }
     .header-logo {
-      font-size: 20px;
-      color: rgb(255, 103, 99);
+      font-size: 25px;
+      color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin: 0px;
+      padding: 20px;
     }
     .img-burger-menu {
-      width: 25px;
+      width: 30px;
+      padding: 20px;
     }
     .nav-content {
       flex-direction: column;
@@ -172,19 +161,13 @@
       align-items: center;
     }
     li {
+      font-size: 25px;
       margin: 10px;
     }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
-      padding: 5px;
-      margin: 15px;
-    }
   }
-
+  
   /*Desktop version*/
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     .container {
       padding: 10px;
       width: 100%;
@@ -194,7 +177,7 @@
     }
     .header-logo {
       font-size: 30px;
-      color: rgb(255, 103, 99);
+      color: rgb(115, 16, 61);
       text-transform: uppercase;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -212,15 +195,7 @@
     }
     li {
       margin: 10px;
-      font-size: 1.1em;
-    }
-    .CV-button {
-      color: white;
-      border-radius: 5px;
-      border: solid 1px rgb(255, 103, 99);
-      padding: 5px;
-      font-size: 1.1em;
-      margin: 5px 60px;
+      font-size: 1.2em;
     }
   }
   
