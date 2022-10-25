@@ -10,7 +10,7 @@
               Portfolio
             </h3>
             <p>
-              Mon portfolio (celui que vous visualisez actuellement)
+              Mon portfolio actuel
             </p>
           </div>
           <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart">
@@ -62,6 +62,9 @@
   
 
   <style scoped>
+  .project-img {
+    width: 10em;
+  }
   
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
@@ -78,6 +81,7 @@
     }
     .container {
       background-color: rgb(231, 231, 231);
+      width: 100%;
     }
     .card {
       background-color: white;
@@ -118,7 +122,6 @@
       border-radius: 3px;
     }
   }
-
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .block-container {
@@ -135,31 +138,31 @@
     .container {
       background-color: rgb(231, 231, 231);
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .card {
       background-color: white;
       border-radius: 10px;
       padding: 15px;
-      margin: 50px 40px;
+      margin: 30px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 40em;
     }
     .titles {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    .project-titles {
-      font-size: xx-large;
-    }
     p {
       color: rgb(77, 82, 72);
       text-align: center;
-      font-size: x-large;
     }
     .project-img {
-      width: 15em;
+      width: 10em;
       border-radius: 5px;
     }
     .stack {
@@ -171,64 +174,77 @@
       padding: 5px;
       border-radius: 3px;
       margin-right: 5px;
-      font-size: large;
     }
     .stack-sticker-v {
       background-color: #0e6e22;
       color: white;
       padding: 5px;
       border-radius: 3px;
-      font-size: large;
     }
   }
-
   /*Desktop version*/
   @media screen and (min-width: 1200px) {
-      .block-container {
-        margin: 20px;
-      }
-      .titles-components {
-        font-size: xxx-large;
-      }
-      .container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-      .card {
-        background-color: rgb(255, 103,99);
-        border-radius: 5px;
-        padding: 15px;
-        margin-bottom: 15px;
-        margin-right: 20px;
-        width: 20em;
-      }
-      .titles {
-        font-size: x-large;
-      }
-      .project-img {
-        justify-content: flex-end;
-        display: flex;
-        margin: 10px;
-      }
-      .stack-sticker-w{
-        background-color: #404078;
-        color: white;
-        padding: 5px;
-        border-radius: 3px;
-        margin-right: 5px;
-      }
-      .stack {
-        display: flex;
-      }
-      .stack-sticker-v {
-        background-color: #0e6e22;
-        color: white;
-        padding: 5px;
-        border-radius: 3px;
-      }
-      p {
-        color: rgb(191, 191, 196);
-      }
+    .block-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titles-components {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 80px 10px 30px;
+    }
+    .container {
+      background-color: rgb(231, 231, 231);
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30em;
+    }
+    .titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20em;
+    }
+    p {
+      color: rgb(77, 82, 72);
+      text-align: center;
+    }
+    .project-img {
+      width: 10em;
+      border-radius: 5px;
+    }
+    .stack {
+      display: flex;
+    }
+    .stack-sticker-w{
+      background-color: #404078;
+      color: white;
+      padding: 5px;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+    .stack-sticker-v {
+      background-color: #0e6e22;
+      color: white;
+      padding: 5px;
+      border-radius: 3px;
+    }
   }
   </style>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
