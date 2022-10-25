@@ -62,10 +62,6 @@
   
 
   <style scoped>
-
-  .project-img {
-    width: 10em;
-  }
   
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
@@ -138,12 +134,13 @@
     }
     .container {
       background-color: rgb(231, 231, 231);
+      width: 100%;
     }
     .card {
       background-color: white;
       border-radius: 10px;
       padding: 15px;
-      margin: 30px 20px;
+      margin: 50px 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -153,12 +150,16 @@
       flex-direction: column;
       align-items: center;
     }
+    .project-titles {
+      font-size: xx-large;
+    }
     p {
       color: rgb(77, 82, 72);
       text-align: center;
+      font-size: x-large;
     }
     .project-img {
-      width: 10em;
+      width: 15em;
       border-radius: 5px;
     }
     .stack {
@@ -170,12 +171,14 @@
       padding: 5px;
       border-radius: 3px;
       margin-right: 5px;
+      font-size: large;
     }
     .stack-sticker-v {
       background-color: #0e6e22;
       color: white;
       padding: 5px;
       border-radius: 3px;
+      font-size: large;
     }
   }
 
