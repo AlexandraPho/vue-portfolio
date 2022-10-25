@@ -5,50 +5,62 @@
       </h2>
       <div class="container">
         <section class="card">
-          <div class="titles">
-            <h3 class="project-titles">
-              Portfolio
-            </h3>
-            <p>
-              Mon portfolio actuel
-            </p>
-          </div>
-          <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart">
-          <div class="stack">
-            <p class="stack-sticker-v">Vue.js</p>
-          </div>
-          <a href=""></a>
+          <a href ="https://github.com/AlexandraPho/vue-portfolio">
+            <div class="titles">
+              <h3 class="project-titles">
+                Portfolio
+              </h3>
+              <p>
+                Mon portfolio actuel
+              </p>
+            </div>
+            <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart">
+            <div class="stack">
+              <p class="stack-sticker-v">Vue.js</p>
+            </div>
+            <div id="container">
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+              </button>
+            </div>
+          </a> 
         </section>
         <section class="card">
-          <div class="titles">
-            <h3 class="project-titles">
-              Spotart
-            </h3>
-            <p>
-              Découvrir des oeuvres d'art
-            </p>
-          </div>
-            <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart" width="200px">
-          <div class="stack">
-            <p class="stack-sticker-w">Wordpress</p>
-            <p class="stack-sticker-v">Vue.js</p>
-          </div>
-          <a href=""></a>
+          <a href ="https://github.com/AlexandraPho/Spotart-front">
+            <div class="titles">
+              <h3 class="project-titles">
+                Spotart
+              </h3>
+              <p>
+                Découvrir des oeuvres d'art
+              </p>
+            </div>
+              <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart" width="200px">
+            <div class="stack">
+              <p class="stack-sticker-w">Wordpress</p>
+              <p class="stack-sticker-v">Vue.js</p>
+            </div>
+          </a>
         </section>
         <section class="card">
+          <a href ="https://github.com/AlexandraPho/vue-portfolio">
           <div class="titles">
-            <h3 class="project-titles">
-              O'cuisine
-            </h3>
-            <p>
-              Site de recettes de cuisines
-            </p>
-          </div>
-            <img class="project-img" src="../assets/ocuisine.jpg" alt="projet ocuisine" width="200px">
-          <div class="stack">
-            <p class="stack-sticker-w">Wordpress</p>
-            <p class="stack-sticker-v">Vue.js</p>
-          </div>
+              <h3 class="project-titles">
+                O'cuisine
+              </h3>
+              <p>
+                Site de recettes de cuisines
+              </p>
+            </div>
+              <img class="project-img" src="../assets/ocuisine.jpg" alt="projet ocuisine" width="200px">
+            <div class="stack">
+              <p class="stack-sticker-w">Wordpress</p>
+              <p class="stack-sticker-v">Vue.js</p>
+            </div>
+          </a>
         </section> 
       </div>
     </div>
@@ -65,6 +77,12 @@
   .project-img {
     width: 10em;
   }
+  a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
   
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
@@ -207,9 +225,6 @@
       border-radius: 10px;
       padding: 15px;
       margin: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       width: 30em;
     }
     .titles {
@@ -242,7 +257,10 @@
       padding: 5px;
       border-radius: 3px;
     }
+    
+    
   }
+
   </style>
 Footer
 © 2022 GitHub, Inc.
