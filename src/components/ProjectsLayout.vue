@@ -75,7 +75,12 @@
       align-items: center;
       text-decoration: none;
     }
-  
+  .card:hover {
+    border: 3px solid rgb(115, 16, 61);
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+    }
+
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
     .block-container {
@@ -219,11 +224,6 @@
       margin: 30px 20px;
       width: 30em;
     }
-    .card:hover {
-      border: 3px solid rgb(115, 16, 61);
-      box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
-      z-index: 500;
-      }
     .titles {
       display: flex;
       flex-direction: column;
