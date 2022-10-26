@@ -3,6 +3,7 @@
       <h2 class="titles-components">
           Contactez-moi
       </h2>
+      <div class="container">
         <section class="contact-me">
           <form ref="form" @submit.prevent="sendEmail">
             <div class="field">
@@ -20,6 +21,7 @@
             <button class="button" type="submit" value="Envoyer">Envoyer</button>
           </form>
         </section> 
+      </div>
     </div>
   </template>
   
@@ -41,9 +43,7 @@
   </script>
   
   <style scoped>
-    .block-container {
-      background-color: rgb(231, 231, 231);
-    }
+    
     .input-field,
     .input-message {
       border-radius: 0.5em;
@@ -62,7 +62,10 @@
         color: white;
         cursor: pointer;
       }
-
+      .container {
+        background-color: rgb(231, 231, 231);
+        width: 100%;
+      }
 
     /*Smartphone Version*/
     @media only screen and (max-width: 767px) {
@@ -71,6 +74,12 @@
         flex-direction: column;
         align-items: center;
         margin: 40px 0px;
+      }
+      .titles-components {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 80px 10px 30px;
       }
       form {
         display: flex;

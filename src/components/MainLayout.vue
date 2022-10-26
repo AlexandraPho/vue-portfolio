@@ -70,36 +70,40 @@
 /*Tablet version*/
 @media only screen and (min-width: 768px) {
   .block-container {
-    margin: 40px 0px;
-    /*background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../assets/personal-img.png');*/
-    /*background-size: cover;*/
-    height: 70em;
+    margin: 40px 0px 0px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 20px;
     align-content: flex-end;
   }
   #information {
     display: flex;
-    padding-bottom: 35px;
     text-align: start;
+    padding-bottom: 35px;
     flex-direction: column;
   }
   h1 {
-    font-size: 3em;
+    font-size: 4em;
+    top: 860px;
+    position: absolute;
+    z-index: 2;
+    margin: 0px 40px;
+    text-shadow: 1px 1px 2px rgb(223 219 220)
   }
   p {
+    top: 935px;
+    position: absolute;
+    z-index: 2;
     font-size: 1.5em;
-    margin: 5px;
+    margin: 0px 40px;
     width: 25em;
+    text-shadow: 1.5px 1.5px 1px rgb(245 242 243);    
   }
   .perso-img {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    height: 900px;
     object-fit: cover;
-    object-position: center;
     filter: opacity(50%);
-    margin: 3em;
   }
 }
 

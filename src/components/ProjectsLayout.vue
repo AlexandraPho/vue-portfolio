@@ -81,10 +81,7 @@
     box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
     z-index: 500;
    }
-  .block-container {
-    background-color: rgb(231, 231, 231);
-  }
-
+   
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
     .block-container {
