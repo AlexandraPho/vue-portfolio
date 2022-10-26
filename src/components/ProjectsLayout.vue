@@ -66,20 +66,24 @@
   
 
   <style scoped>
+  
   .project-img {
     width: 10em;
   }
   a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-    }
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-decoration: none;
+   }
   .card:hover {
     border: 3px solid rgb(115, 16, 61);
     box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
     z-index: 500;
-    }
+   }
+  .block-container {
+    background-color: rgb(231, 231, 231);
+  }
 
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
@@ -137,6 +141,7 @@
       border-radius: 3px;
     }
   }
+  
   /*Tablet version*/
   @media screen and (min-width: 768px) {
     .block-container {
@@ -197,6 +202,7 @@
       border-radius: 3px;
     }
   }
+  
   /*Desktop version*/
   @media screen and (min-width: 1200px) {
     .block-container {
@@ -254,8 +260,6 @@
       padding: 5px;
       border-radius: 3px;
     }
-    
-    
   }
 
   </style>

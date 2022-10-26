@@ -32,7 +32,7 @@
   
   <style scoped>
    header {
-    height: 3em;
+    height: 4em;
    }
   </style>
   

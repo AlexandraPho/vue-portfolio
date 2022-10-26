@@ -12,7 +12,7 @@ export default {
 
 <style>
 
-p {
+  p {
     font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
   }
   body{
