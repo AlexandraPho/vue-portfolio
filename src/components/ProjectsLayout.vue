@@ -18,14 +18,6 @@
             <div class="stack">
               <p class="stack-sticker-v">Vue.js</p>
             </div>
-            <div id="container">
-              <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                  <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Learn More</span>
-              </button>
-            </div>
           </a> 
         </section>
         <section class="card">
@@ -227,6 +219,11 @@
       margin: 30px 20px;
       width: 30em;
     }
+    .card:hover {
+      border: 3px solid rgb(115, 16, 61);
+      box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+      z-index: 500;
+      }
     .titles {
       display: flex;
       flex-direction: column;
