@@ -21,7 +21,6 @@
 </template>
 
 <script>
-
   export default {
     data() {
       return {
@@ -34,7 +33,6 @@
       },
     },
   };
-
 </script>
 
 <style scoped>
@@ -65,9 +63,9 @@
   a {
     text-decoration: none;
   }
+  
   /*Mobile version - hidden hamburger menu*/
   @media screen and (max-width: 767px) {
-
     .menu-header {
       display: flex;
       justify-content: space-between;
@@ -125,7 +123,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      }
+    }
     .header-logo {
       font-size: 25px;
       color: rgb(115, 16, 61);
