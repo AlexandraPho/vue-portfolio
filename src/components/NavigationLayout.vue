@@ -4,7 +4,7 @@
     <div class="header-container"> 
       <div class="menu-header">
         <!--LOGO-->
-         <router-link :to="{name: 'HomeApp'}"><h1 class="header-logo">Alexandra Pinheiro</h1></router-link> 
+         <router-link :to="{name: 'HomeApp'}"><img src="../assets/AP.png" class="header-logo"></router-link> 
           <!--Hamburger icon with click method-->
           <img src="../assets/menu.svg" class="img-burger-menu" @click="showMenu()"> 
       </div>
@@ -40,7 +40,6 @@
     background-color: white;
     width: 100%;
     position: absolute;
-    padding-top: 25px;
   }
   .nav-content {
     display: flex;
@@ -73,15 +72,11 @@
       color: rgb(115, 16, 61);
       }
     .header-logo {
-      font-size: 22px;
-      color: rgb(115, 16, 61);
-      text-transform: uppercase;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      margin: 0px;
-      padding: 10px;
+      padding: 20px;
+      width: 5em;
     }
     .img-burger-menu {
-      width: 30px;
+      width: 2em;
       padding: 10px;
     }
     .nav-content {
@@ -125,15 +120,11 @@
       align-items: center;
     }
     .header-logo {
-      font-size: 25px;
-      color: rgb(115, 16, 61);
-      text-transform: uppercase;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      margin: 0px;
       padding: 20px;
+      width: 7em;
     }
     .img-burger-menu {
-      width: 30px;
+      width: 3em;
       padding: 20px;
     }
     .nav-content {
@@ -147,6 +138,7 @@
     .open-menu {
       opacity: 1;
       height: 150px;
+      font-weight: bold;
     }
     .closed-menu {
       opacity: 0;
@@ -171,15 +163,14 @@
     .header-container {
       padding: 10px;
       width: 100%;
-      height: 50px;
+      height: 80px;
       display: flex;
       justify-content: space-around;
+      align-items: center;
     }
     .header-logo {
-      font-size: 30px;
-      color: rgb(115, 16, 61);
-      text-transform: uppercase;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      width: 8em;
+      padding: 20px;
     }
     .img-burger-menu {
       display: none;
@@ -188,7 +179,6 @@
       opacity: 1;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
     }
     .nav-items {
       flex-direction: row
