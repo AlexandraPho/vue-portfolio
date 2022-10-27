@@ -18,6 +18,17 @@
   
   <style scoped>
 
+    .container {
+      height: 30em;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+    }
+    p {
+      color: rgb(39 48 31);
+    }
+
     /*Smartphone Version*/
     @media only screen and (max-width: 767px) {
       .block-container {
@@ -32,15 +43,10 @@
         justify-content: center;
         margin: 80px 10px 30px;
       }
-      .container {
-        height: 30em;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-      }
+     
       p {
-        color: rgb(39 48 31);
+        font-weight: bold;
+        font-size: small;
       }
     }
     /*Tablet version*/
@@ -50,6 +56,21 @@
         flex-direction: column;
         align-items: center;
         margin: 40px 0px;
+      }
+      .titles-components {
+      margin: 80px 10px;
+      font-size: 2.5em;
+      }
+      .container {
+        height: 30em;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+      }
+      p {
+        font-size: 1.2em;
+        font-weight: bold;
       }
     }
 

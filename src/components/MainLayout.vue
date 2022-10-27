@@ -76,7 +76,7 @@
     .profile-image {
       display:flex;
       justify-content: center;
-      margin-top: 20px;
+      margin-top: 30px;
     }
     .perso-img {
       width: 33%;
@@ -135,10 +135,7 @@
 
   /*Desktop version*/
   @media only screen and (min-width: 1200px) {
-    
     #information {
-      display: flex;
-      flex-direction: row;
       height: 50em;
     }
     .profil {
@@ -168,7 +165,7 @@
     }
     #social-links{
       display: flex;
-      margin: 50px;
+      margin: 60px;
       justify-content: space-evenly;
     }
     .img-link {

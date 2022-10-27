@@ -121,9 +121,11 @@
       flex-direction: column;
       align-items: center;
     }
-    
+    h3 {
+      font-size: 1.5em;
+    }
     p {
-      color: rgb(77, 82, 72);
+      color: rgb(39 48 31);
       text-align: center;
     }
     .project-img {
@@ -156,10 +158,8 @@
       align-items: center;
     }
     .titles-components {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 80px 10px 30px;
+      margin: 80px 10px;
+      font-size: 2.5em;
     }
     .container {
       background-color: rgb(231, 231, 231);
@@ -183,9 +183,13 @@
       flex-direction: column;
       align-items: center;
     }
+    h3 {
+      font-size: xx-large;
+    }
     p {
-      color: rgb(77, 82, 72);
+      color: rgb(39 48 31);
       text-align: center;
+      font-size: 1.5em;
     }
     .project-img {
       width: 10em;

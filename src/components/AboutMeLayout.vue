@@ -64,6 +64,18 @@
     background: rgb(148,117,132);
     background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
   }
+  .skills {
+    background-color: rgb(115, 16, 61);
+    color: white;
+    border-radius: 5px;
+  }
+  .titles,
+  .skills-titles {
+    color: black;
+  }
+  p {
+    color: rgb(39 48 31);
+  }
 
   /*Smartphone Version*/
   @media screen and (max-width: 767px) {
@@ -86,15 +98,13 @@
       padding: 10px;
     }
     .text {
-      margin: 0px 30px;
+      padding: 20px;
     }
     .titles {
       font-size: large;
       text-transform: uppercase;
-      color: black;
     }
     p {
-      color: rgb(39 48 31);
       font-size: 1.2em;
       line-height: 1.5em;
     }
@@ -116,9 +126,6 @@
     .skills {
       margin: 5px;
       padding: 10px;
-      background-color: rgb(115, 16, 61);
-      color: white;
-      border-radius: 5px;
     }
     .stack-tech {
       display: flex;
@@ -127,7 +134,7 @@
       align-items: center;
     }
     h4 {
-      color: rgb(77, 82, 72);
+      color: rgb(39 48 31);
       font-size: large;
     }
     .logos {
@@ -144,7 +151,6 @@
 
   /*Tablet Version*/
   @media screen and (min-width: 768px) {
-
     .block-container {
       display: flex;
       flex-direction: column;
@@ -152,7 +158,8 @@
       padding: 30px 0px;
     }
     .titles-components {
-      font-size: xx-large;
+      margin: 80px 10px 30px;
+      font-size: 2.5em;
     }
     .about-me {
       display: flex;
@@ -160,18 +167,17 @@
       align-items: center;
       text-align: center;
       padding: 15px;
-      color: white;
+    }
+    .text {
+      padding: 40px;
     }
     .titles {
       font-size: x-large;
       text-transform: uppercase;
-      color: black;
     }
     p {
-      margin: 5px;
       font-size: 1.5em;
-      color: rgb(77, 82, 72);
-      width: 25em;
+      line-height: 2em;
     }
     .soft_hard-skills {
       display: flex;
@@ -184,11 +190,14 @@
     }
     .soft-skills {
       margin: 2em;
+      font-size: 1.5em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .skills {
       margin: 15px;
       padding: 15px;
-      background-color: rgb(115, 16, 61);
     }
     .stack-tech {
       display: flex;
@@ -197,8 +206,8 @@
       margin: 1.5em;
     }
     h4 {
-      font-weight: 200;
-      font-size: x-large;
+      color: rgb(39 48 31);
+      font-size: 1.5em;
     }
     .logos {
       padding: 10px;
@@ -238,14 +247,12 @@
     .titles {
       font-size: x-large;
       text-transform: uppercase;
-      color: black;
     }
     p {
       text-align: center;
       width: 25em;
       margin: 5px;
       font-size: 1.2em;
-      color: rgb(77, 82, 72);
     }
     .soft_hard-skills {
       margin-left: 30px;
@@ -253,7 +260,6 @@
     .skills-titles {
       font-size: x-large;
       margin: 2.5em;
-      color: black;
     }
     .soft-skills {
       margin: 10px;
@@ -265,8 +271,6 @@
     .skills {
       margin: 15px;
       padding: 15px;
-      background-color: rgb(115, 16, 61);
-      color: white;
     }
     .stack-tech {
       display: flex;
