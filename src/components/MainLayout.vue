@@ -12,133 +12,167 @@
           <img src="../assets/personal-img.png" class="perso-img" alt="profile-image">
       </div>
     </section>
-    
+    <section id="social-links">
+        <a href="https://github.com/AlexandraPho">
+            <div class="link">
+              <img src="../assets/github.svg" class="img-link" alt="Github"> 
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/alexandra-pinheiro/">
+            <div class="link">
+                <img src="../assets/linkedin.svg" class="img-link" alt="Linkdin">        
+            </div>
+        </a>
+      </section>
   </div>
 </template>
 
 <script>
-    export default {
-        name: "MainLayout"
-    }
+
+  export default {
+      name: "MainLayout"
+  }
+
 </script>
 
 <style scoped>
-  
- h1 {
-  color: rgb(115, 16, 61);
- }
-    /*Smartphone version*/
-@media only screen and (max-width: 767px) {
-    .block-container {
-      margin: 40px 0px 0px;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: flex-end;
-    }
-    #information {
-      display: flex;
-      text-align: start;
-      padding-bottom: 35px;
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 1.5em;
-      top: 450px;
-      position: absolute;
-      z-index: 2;
-      margin: 0px 20px;
-      text-shadow: 1px 1px 2px rgb(223, 219, 220);
-    }
-    p {
-      top: 480px;
-      position: absolute;
-      z-index: 2;
-      font-size: 15px;
-      margin: 0px 20px;
-      width: 18em;
-      text-shadow: 1.5px 1.5px 1px rgb(245, 242, 243);     
-    }
-    .perso-img {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      object-fit: cover;
-      filter: opacity(50%);
-    }
-    
-  }
-/*Tablet version*/
-@media only screen and (min-width: 768px) {
+
   .block-container {
     margin: 40px 0px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;
   }
   #information {
-    display: flex;
-    text-align: start;
-    padding-bottom: 35px;
-    flex-direction: column;
+    background: rgb(148,117,132);
+    background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
+    align-items: center;
   }
-  h1 {
-    font-size: 4em;
-    top: 860px;
-    position: absolute;
-    z-index: 2;
-    margin: 0px 40px;
-    text-shadow: 1px 1px 2px rgb(223 219 220)
+  h1,
+  p{
+    color: rgb(39 48 31);
   }
-  p {
-    top: 935px;
-    position: absolute;
-    z-index: 2;
-    font-size: 1.5em;
-    margin: 0px 40px;
-    width: 25em;
-    text-shadow: 1.5px 1.5px 1px rgb(245 242 243);    
-  }
-  .perso-img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    object-fit: cover;
-    filter: opacity(50%);
-  }
-}
 
-/*Desktop version*/
-@media only screen and (min-width: 1200px) {
-  .block-container {
-    margin: 40px 0px;
-    height: 70em;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 20px;
-    align-content: flex-end;
+  /*Smartphone version*/
+  @media only screen and (max-width: 767px) {
+    #information {
+      display: flex;
+      flex-direction: column;
+      height: 40em;
+    }
+    .profil {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 0px 30px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 30px 0px;
+      text-shadow: 1px 1px 2px rgb(223 219 220);
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    .profile-image {
+      display:flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .perso-img {
+      width: 33%;
+      filter: opacity(80%);
+      border-radius: 20px;
+    }
+    #social-links{
+      display: flex;
+      margin: 20px;
+      justify-content: space-evenly;
+    }
+    .img-link {
+      width: 3em;
+    }
   }
-  #information {
-    display: flex;
-    /* padding-bottom: 60px; */
-    /* text-align: start; */
-    flex-direction: row;
-    align-items: flex-end;
+
+  /*Tablet version*/
+  @media only screen and (min-width: 768px) {
+    #information {
+      display: flex;
+      flex-direction: row;
+      height: 70em;
+    }
+    .profil {
+      width: 50%;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 0px 30px;
+    }
+    h1 {
+      font-size: 3.5em;
+      margin: 60px 0px;
+      text-shadow: 1px 1px 2px rgb(223 219 220)
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 2em;
+    }
+    .profile-image {
+      width: 50%;
+    }
+    .perso-img {
+      width: 90%;
+      filter: opacity(80%);
+      border-radius: 20px;
+    }
+    #social-links{
+      display: flex;
+      margin: 50px;
+      justify-content: space-evenly;
+    }
+    .img-link {
+      width: 5em;
+    }
   }
-  h1 {
-    font-size: 3em;
+
+  /*Desktop version*/
+  @media only screen and (min-width: 1200px) {
+    
+    #information {
+      display: flex;
+      flex-direction: row;
+      height: 50em;
+    }
+    .profil {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin: 0px 50px;
+    }
+    h1 {
+      font-size: 4em;
+      margin: 60px 0px;
+      text-shadow: 1px 1px 2px rgb(223 219 220)
+    }
+    p {
+      font-size: 2em;
+      line-height: 2em;
+    }
+    .profile-image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+    .perso-img {
+      width: 50%;
+      filter: opacity(80%);
+      border-radius: 20px;
+    }
+    #social-links{
+      display: flex;
+      margin: 50px;
+      justify-content: space-evenly;
+    }
+    .img-link {
+      width: 5em;
+    }
   }
-  p {
-    font-size: 1.5em;
-    margin: 5px;
-    width: 40em;
-  }
-  .perso-img {
-    width: 100%;
-    height: 900px;
-    object-fit: cover;
-    object-position: center;
-    filter: opacity(50%);
-    margin: 3em;
-  }
-}
 </style>

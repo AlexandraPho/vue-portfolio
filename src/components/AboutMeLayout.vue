@@ -1,22 +1,11 @@
 <template>
   <div class="block-container">
     
-      <section id="social-links">
-        <a href="https://github.com/AlexandraPho">
-            <div class="link">
-              <img src="../assets/github.svg" class="img-link" alt="Github"> 
-            </div>
-        </a>
-        <a href="https://www.linkedin.com/in/alexandra-pinheiro/">
-            <div class="link">
-                <img src="../assets/linkedin.svg" class="img-link" alt="Linkdin">        
-            </div>
-        </a>
-      </section>
+      
     <h2 class="titles-components">
       Présentation
     </h2>
-      <div class="container-one">
+      <div class="container">
         <section class="about-me">
           <div class="text">
             <h3 class="titles">
@@ -71,30 +60,23 @@
 
 <style scoped>
   
-  .container-one {
-    background-color: rgb(231, 231, 231);
+  .container {
+    background: rgb(148,117,132);
+    background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
   }
 
   /*Smartphone Version*/
   @media screen and (max-width: 767px) {
-   
     .block-container {
       display: flex;
       flex-direction: column;
-    }
-    #social-links {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px;
-    }
-    .img-link {
-      width: 3.5em;
     }
     .titles-components {
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin: 80px 10px 30px;
+      font-size: 1.7em;
     }
     .about-me {
       display: flex;
@@ -103,14 +85,18 @@
       text-align: center;
       padding: 10px;
     }
+    .text {
+      margin: 0px 30px;
+    }
     .titles {
       font-size: large;
       text-transform: uppercase;
       color: black;
     }
     p {
-      color: rgb(77, 82, 72);
-      width: 17em;
+      color: rgb(39 48 31);
+      font-size: 1.2em;
+      line-height: 1.5em;
     }
     .soft_hard-skills {
       display: flex;
@@ -142,7 +128,6 @@
     }
     h4 {
       color: rgb(77, 82, 72);
-      font-weight: 200;
       font-size: large;
     }
     .logos {
@@ -232,7 +217,7 @@
     .block-container {
       padding: 50px 0px;
     }
-    .container-one {
+    .container {
       display: flex;
       align-items: baseline;
     }

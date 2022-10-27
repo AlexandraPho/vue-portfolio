@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Menu container-->
-    <div class="container"> 
+    <div class="header-container"> 
       <div class="menu-header">
         <!--LOGO-->
          <router-link :to="{name: 'HomeApp'}"><h1 class="header-logo">Alexandra Pinheiro</h1></router-link> 
@@ -36,7 +36,7 @@
 </script>
 
 <style scoped>
-  .container {
+  .header-container {
     background-color: white;
     width: 100%;
     position: absolute;
@@ -115,7 +115,7 @@
   
   /*Tablet version*/
   @media screen and (min-width: 768px) {
-    .container {
+    .header-container {
       position: absolute;
       width: 100%;
     }
@@ -168,7 +168,7 @@
   
   /*Desktop version*/
   @media screen and (min-width: 1200px) {
-    .container {
+    .header-container {
       padding: 10px;
       width: 100%;
       height: 50px;
