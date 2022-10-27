@@ -83,7 +83,8 @@
         margin: 50px 0px;
       }
       .titles-components {
-        font-size: xx-large;
+        margin: 80px 10px;
+        font-size: 2.5em;
       }
     }
     

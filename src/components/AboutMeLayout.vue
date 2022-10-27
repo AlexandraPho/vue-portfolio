@@ -228,15 +228,11 @@
     }
     .container {
       display: flex;
-      align-items: baseline;
+      align-items: center;
     }
     .titles-components {
-      font-size: xx-large;
-    }
-    .about-me {
-      padding: 5px;
-      text-align: start;
-      margin-right: 30px;
+      margin: 80px 10px;
+      font-size: 2.5em;
     }
     .text {
       display: flex;
@@ -254,17 +250,13 @@
       margin: 5px;
       font-size: 1.2em;
     }
-    .soft_hard-skills {
-      margin-left: 30px;
-    }
     .skills-titles {
       font-size: x-large;
       margin: 2.5em;
     }
     .soft-skills {
-      margin: 10px;
       display: flex;
-      width: 30em;
+      width: 25em;
       flex-wrap: wrap;
       justify-content: center;
     }

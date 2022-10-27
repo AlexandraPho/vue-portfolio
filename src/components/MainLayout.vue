@@ -137,20 +137,20 @@
   @media only screen and (min-width: 1200px) {
     #information {
       height: 50em;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
     }
     .profil {
-      width: 50%;
       display: flex;
       justify-content: center;
-      margin: 0px 50px;
+      margin: 40px 0px 0px 90px;
     }
     h1 {
       font-size: 4em;
-      margin: 60px 0px;
-      text-shadow: 1px 1px 2px rgb(223 219 220)
     }
     p {
-      font-size: 2em;
+      font-size: 1.7em;
       line-height: 2em;
     }
     .profile-image {
