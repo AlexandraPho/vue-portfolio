@@ -49,12 +49,11 @@
     color: white;
   }
   h1 {
-    text-shadow: 3px 3px 4px #B65C7B;
+    color: #b65c7b;
+    text-shadow: 4px 5px 1px rgb(115, 16, 61);
   }
-  .perso-img {
-    filter: grayscale(100%) contrast(120%);
-    box-shadow: 15px 20px 30px 0 #B65C7B;
-    border-radius: 5px;
+  .profile-image {
+    box-shadow: 20px 10px 60px 0 rgb(115, 16, 61);
   }
 
   /*Smartphone version*/
@@ -72,8 +71,9 @@
       margin: 20px 30px;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin: 30px 0px;
+      font-weight: normal;
     }
     p {
       font-size: 1.2em;
@@ -83,7 +83,6 @@
       display:flex;
       justify-content: center;
       margin-top: 30px;
-      width: 50%;
       position: relative; 
       width: 200px; 
       height: 200px; 
@@ -121,7 +120,7 @@
     }
     h1 {
       font-weight: normal;
-      font-size: 3.5em;
+      font-size: 4em;
       margin: 60px 0px;
     }
     p {
@@ -129,7 +128,6 @@
       line-height: 2em;
     }
     .profile-image {
-      width: 50%;
       display: flex;
       justify-content: center;
       position: relative; 
@@ -167,14 +165,13 @@
       margin: 30px 30px 20px 20px;
     }
     h1 {
-      font-size: 4em;
+      font-size: 5em;
     }
     p {
       font-size: 1.7em;
       line-height: 2em;
     }
     .profile-image {
-      width: 50%;
       display: flex;
       justify-content: center;
       position: relative; 
