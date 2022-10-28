@@ -29,7 +29,7 @@
   .titles-components {
     text-transform: uppercase;
     color: rgb(115, 16, 61);
-    text-shadow: 3px 3px 4px #B65C7B;
+    text-shadow: 2px 3px 1px #B65C7B;
   }
 
 </style>
