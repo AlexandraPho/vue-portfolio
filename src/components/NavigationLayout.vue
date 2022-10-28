@@ -36,6 +36,7 @@
 </script>
 
 <style scoped>
+
   .header-container {
     background-color: white;
     width: 100%;
@@ -137,7 +138,7 @@
     }
     .open-menu {
       opacity: 1;
-      height: 150px;
+      height: 170px;
       font-weight: bold;
     }
     .closed-menu {

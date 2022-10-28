@@ -9,20 +9,20 @@
         <section class="about-me">
           <div class="text">
             <h3 class="titles">
-              Curieuse
+              Curieuse ?
             </h3>
             <p>
-              J'ai toujours été la personne polyvalente dans mes divers emplois car j'aime découvrir de nouveaux horizons.
-              L'apprentissage est pour moi une façon de me renouveler constamment.
+              J'ai toujours été la personne polyvalente dans mes divers emplois. J'aime par dessus tout, apprendre.<br>Je suis <strong>curieuse!</strong><br>
+              L'apprentissage est donc pour moi une façon de me renouveler et découvrir de nouveaux horizons.
             </p>
           </div>
           <div class="text">
             <h3 class="titles">
-              Motivé
+              Motivé !
             </h3>
             <p>
-              En 2020, je  démarre des cours sur diverses plateformes pour apprendre le langage HTML et CSS en autodidacte.
-              En septembre 2021, je rejoins la promo Yuna de l'école O'Clock pour une formation intensive de 6 mois.
+              C'est en 2020 que je me lance à la découverte du <strong>HTML </strong>et <strong>CSS</strong>  en suivant des cours sur diverses plateformes que j'auto-finance.
+              En septembre 2021, après un an de bataille pour trouver un organisme qui accepte de m'aider à financer ma formation, je rejoins la tant attendu promo Yuna de l'école O'Clock. La formation est intensive et dure 6 mois.
             </p>
             </div>
         </section>
@@ -60,21 +60,18 @@
 
 <style scoped>
   
-  .container {
-    background: rgb(148,117,132);
-    background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
-  }
   .skills {
-    background-color: rgb(115, 16, 61);
+    background-color: #b65c7b;
     color: white;
     border-radius: 5px;
+    font-family: 'Belleza', sans-serif;
   }
   .titles,
   .skills-titles {
-    color: black;
+    color: white;
   }
   p {
-    color: rgb(39 48 31);
+    color:white;
   }
 
   /*Smartphone Version*/
@@ -134,7 +131,7 @@
       align-items: center;
     }
     h4 {
-      color: rgb(39 48 31);
+      color: white;
       font-size: large;
     }
     .logos {
@@ -177,7 +174,7 @@
     }
     p {
       font-size: 1.5em;
-      line-height: 2em;
+      line-height: 1.5em;
     }
     .soft_hard-skills {
       display: flex;
@@ -206,7 +203,7 @@
       margin: 1.5em;
     }
     h4 {
-      color: rgb(39 48 31);
+      color: white;
       font-size: 1.5em;
     }
     .logos {
@@ -229,16 +226,24 @@
     .container {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
     .titles-components {
       margin: 80px 10px;
       font-size: 2.5em;
     }
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
     .text {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 5em;
+      padding: 25px;
     }
     .titles {
       font-size: x-large;
@@ -247,8 +252,7 @@
     p {
       text-align: center;
       width: 25em;
-      margin: 5px;
-      font-size: 1.2em;
+      font-size: 1.6em;
     }
     .skills-titles {
       font-size: x-large;
@@ -256,9 +260,10 @@
     }
     .soft-skills {
       display: flex;
-      width: 25em;
+      width: 20em;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 0.5em;
     }
     .skills {
       margin: 15px;

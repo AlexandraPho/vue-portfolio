@@ -67,10 +67,6 @@
 
   <style scoped>
 
-.container {
-    background: rgb(148,117,132);
-    background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
-  }
   .project-img {
     width: 10em;
   }
@@ -81,12 +77,16 @@
     text-decoration: none;
    }
   .card:hover {
-    border: 3px solid rgb(115, 16, 61);
+    border: 3px solid #B65C7B;
     box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
     z-index: 500;
    }
    h3 {
     color: rgb(115, 16, 61);
+    font-weight: normal;
+  }
+  p {
+    color: rgb(39 48 31);
   }
    
   /*Smartphone version*/
@@ -102,10 +102,6 @@
       justify-content: center;
       margin: 80px 10px 30px;
       font-size: 1.7em;
-    }
-    .container {
-      background-color: rgb(231, 231, 231);
-      width: 100%;
     }
     .card {
       background-color: white;
@@ -125,7 +121,6 @@
       font-size: 1.5em;
     }
     p {
-      color: rgb(39 48 31);
       text-align: center;
     }
     .project-img {
@@ -162,8 +157,6 @@
       font-size: 2.5em;
     }
     .container {
-      background-color: rgb(231, 231, 231);
-      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -187,7 +180,6 @@
       font-size: xx-large;
     }
     p {
-      color: rgb(39 48 31);
       text-align: center;
       font-size: 1.5em;
     }
@@ -225,9 +217,7 @@
       font-size: 2.5em;
     }
     .container {
-      background-color: rgb(231, 231, 231);
       display: flex;
-      width: 100%;
       justify-content: space-evenly;
       flex-direction: row;
     }
@@ -245,7 +235,6 @@
       width: 20em;
     }
     p {
-      color: rgb(77, 82, 72);
       text-align: center;
     }
     .project-img {

@@ -4,30 +4,32 @@
 
 <script>
 
-export default {
-  name: 'App'
-  }
+  export default {
+    name: 'App'
+    }
 
 </script>
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Kaushan+Script&display=swap');
   p {
-    font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    font-family: 'Belleza', sans-serif;
   }
   body{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Kaushan Script', cursive;
     background-color: white;
     margin: 0;
     overflow-x: hidden;
   }
   .container {
-    background: rgb(148,117,132);
-    background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
+    background: #246647;
+    width: 100%;
   }
   .titles-components {
     text-transform: uppercase;
     color: rgb(115, 16, 61);
+    text-shadow: 3px 3px 4px #B65C7B;
   }
 
 </style>

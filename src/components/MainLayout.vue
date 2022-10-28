@@ -41,13 +41,15 @@
     margin: 40px 0px 0px;
   }
   #information {
-    background: rgb(148,117,132);
-    background: radial-gradient(circle, rgba(148,117,132,1) 4%, rgba(204,195,200,1) 45%, rgba(255,255,255,1) 80%);
+    background: #246647;
     align-items: center;
   }
   h1,
   p{
-    color: rgb(39 48 31);
+    color: white;
+  }
+  h1 {
+    text-shadow: 3px 3px 4px #B65C7B;
   }
 
   /*Smartphone version*/
@@ -67,7 +69,6 @@
     h1 {
       font-size: 2.5em;
       margin: 30px 0px;
-      text-shadow: 1px 1px 2px rgb(223 219 220);
     }
     p {
       font-size: 1.2em;
@@ -81,7 +82,7 @@
     .perso-img {
       width: 33%;
       filter: opacity(80%);
-      border-radius: 20px;
+      border-radius: 10px;
     }
     #social-links{
       display: flex;
@@ -107,9 +108,9 @@
       margin: 0px 30px;
     }
     h1 {
+      font-weight: normal;
       font-size: 3.5em;
       margin: 60px 0px;
-      text-shadow: 1px 1px 2px rgb(223 219 220)
     }
     p {
       font-size: 1.5em;
@@ -160,8 +161,10 @@
     }
     .perso-img {
       width: 50%;
-      filter: opacity(80%);
-      border-radius: 20px;
+      filter: grayscale(100%) contrast(120%);
+      box-shadow: 15px 20px 30px 0 #B65C7B;
+      border-radius: 5px;
+    
     }
     #social-links{
       display: flex;

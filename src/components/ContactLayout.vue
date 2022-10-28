@@ -19,14 +19,14 @@
   <style scoped>
 
     .container {
-      height: 30em;
+      height: 20em;
       display: flex;
       align-items: center;
       width: 100%;
       justify-content: center;
     }
     p {
-      color: rgb(39 48 31);
+      color: white;
     }
 
     /*Smartphone Version*/
@@ -46,7 +46,7 @@
      
       p {
         font-weight: bold;
-        font-size: small;
+        font-size: 1.2em;
       }
     }
     /*Tablet version*/
@@ -69,7 +69,7 @@
         justify-content: center;
       }
       p {
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: bold;
       }
     }
@@ -85,6 +85,9 @@
       .titles-components {
         margin: 80px 10px;
         font-size: 2.5em;
+      }
+      p {
+        font-size: 2em;;
       }
     }
     
