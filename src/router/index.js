@@ -3,6 +3,7 @@ import HomeApp from '../views/HomeApp.vue'
 import AboutMeApp from '../views/AboutMeApp.vue'
 import ContactApp from '../views/ContactApp.vue'
 import ProjectsApp from '../views/ProjectsApp.vue'
+import NotFound from '../views/NotFound.vue'
 
 
 const routes = [
@@ -26,6 +27,17 @@ const routes = [
     name: 'ContactApp',
     component: ContactApp
   },
+  { 
+    path: '/404', 
+    name: 'NotFound',
+    component: NotFound 
+  },  
+  {
+    // path: "*",
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound,
+  }
 ]
 
 
