@@ -1,24 +1,20 @@
 <template>
-    <footer>
-     
-      <div class="resume">
-        <p>Télécharger mon CV 
-          <a download="CV Alexandra Pinheiro" href="require('../assets/Alexandra-Pinheiro-CV.pdf')" > 
-          <strong class="click">&nbsp;ici</strong>
-          </a>
-        </p>
-      </div>
-    </footer>
-  </template>
+  <footer>
+     <div class="resume">
+      <p>Télécharger mon CV 
+        <a href="assets/Alexandra-Pinheiro-CV.pdf" target="_blank"> 
+        <strong class="click">&nbsp;ici</strong>
+        </a>
+      </p>
+    </div>
+  </footer>
+</template>
     
 <script>
 
-
-
   export default {
-  // add the base URL to your component's "data" function
-  data: () => ({ publicPath: process.env.BASE_URL })
-  }
+    name: "FooterLayout"
+}
 
 </script>
     

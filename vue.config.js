@@ -1,8 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
+  assetsDir: 'assets',
   chainWebpack: config => {
-    config.module.rule('downloads')
+  config.module.rule('downloads')
       // bundle common document files
       .test(/\.(pdf|docx?|xlsx?|csv|pptx?)(\?.*)?$/)
       .use('file-loader')

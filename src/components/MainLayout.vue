@@ -51,6 +51,11 @@
   h1 {
     text-shadow: 3px 3px 4px #B65C7B;
   }
+  .perso-img {
+    filter: grayscale(100%) contrast(120%);
+    box-shadow: 15px 20px 30px 0 #B65C7B;
+    border-radius: 5px;
+  }
 
   /*Smartphone version*/
   @media only screen and (max-width: 767px) {
@@ -81,8 +86,6 @@
     }
     .perso-img {
       width: 33%;
-      filter: opacity(80%);
-      border-radius: 10px;
     }
     #social-links{
       display: flex;
@@ -120,9 +123,7 @@
       width: 50%;
     }
     .perso-img {
-      width: 90%;
-      filter: opacity(80%);
-      border-radius: 20px;
+      width: 80%;
     }
     #social-links{
       display: flex;
@@ -161,10 +162,6 @@
     }
     .perso-img {
       width: 50%;
-      filter: grayscale(100%) contrast(120%);
-      box-shadow: 15px 20px 30px 0 #B65C7B;
-      border-radius: 5px;
-    
     }
     #social-links{
       display: flex;
