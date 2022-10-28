@@ -69,7 +69,7 @@
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
-      margin: 0px 30px;
+      margin: 20px 30px;
     }
     h1 {
       font-size: 2.5em;
@@ -83,9 +83,16 @@
       display:flex;
       justify-content: center;
       margin-top: 30px;
+      width: 50%;
+      position: relative; 
+      width: 200px; 
+      height: 200px; 
+      overflow: hidden; 
+      border-radius: 50%; 
     }
     .perso-img {
-      width: 33%;
+      width: 100%; 
+      height: 130%;
     }
     #social-links{
       display: flex;
@@ -101,14 +108,16 @@
   @media only screen and (min-width: 768px) {
     #information {
       display: flex;
-      flex-direction: row;
-      height: 70em;
+      height: 65em;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
     }
     .profil {
       width: 50%;
       flex-wrap: wrap;
       text-align: center;
-      margin: 0px 30px;
+      margin: 0px 30px 0px 20px;
     }
     h1 {
       font-weight: normal;
@@ -121,9 +130,17 @@
     }
     .profile-image {
       width: 50%;
+      display: flex;
+      justify-content: center;
+      position: relative; 
+      width: 300px; 
+      height: 300px; 
+      overflow: hidden; 
+      border-radius: 50%; 
     }
     .perso-img {
-      width: 80%;
+      width: 100%; 
+      height: 130%;
     }
     #social-links{
       display: flex;
@@ -142,11 +159,12 @@
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
+      justify-content: center;
     }
     .profil {
       display: flex;
       justify-content: center;
-      margin: 40px 0px 0px 90px;
+      margin: 30px 30px 20px 20px;
     }
     h1 {
       font-size: 4em;
@@ -159,9 +177,15 @@
       width: 50%;
       display: flex;
       justify-content: center;
+      position: relative; 
+      width: 400px; 
+      height: 400px; 
+      overflow: hidden; 
+      border-radius: 50%; 
     }
     .perso-img {
-      width: 50%;
+      width: 100%; 
+      height: 130%;
     }
     #social-links{
       display: flex;
