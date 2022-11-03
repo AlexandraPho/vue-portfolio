@@ -69,6 +69,7 @@
     #information {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       height: 40em;
     }
     .profil {
@@ -76,11 +77,11 @@
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
-      margin: 20px 30px;
+      margin: 0px 30px;
     }
     h1 {
       font-size: 3em;
-      margin: 30px 0px;
+      margin: 0;
       font-weight: normal;
     }
     p {
@@ -90,10 +91,10 @@
     .profil-image {
       display:flex;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 10px;
       position: relative; 
-      width: 200px; 
-      height: 200px; 
+      width: 180px; 
+      height: 180px; 
       overflow: hidden; 
       border-radius: 50%; 
     }
@@ -133,7 +134,7 @@
     h1 {
       font-weight: normal;
       font-size: 4em;
-      margin: 60px 0px;
+      margin: 40px 0px;
     }
     p {
       font-size: 1.5em;
