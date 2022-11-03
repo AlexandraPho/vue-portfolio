@@ -15,6 +15,7 @@
               <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
+            <button class="button"><a href="assets/Alexandra-Pinheiro-CV.pdf" target="_blank" class="button-CV">Télécharger mon CV</a></button>
           </nav>
     </div>
   </div>
@@ -63,6 +64,17 @@
   a {
     text-decoration: none;
   }
+  .button {
+    background-color: rgb(115, 16, 61);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px;
+  }
+  .button-CV {
+    color: white;
+    font-family:'Kaushan Script', cursive;
+  }
   
   /*Mobile version - hidden hamburger menu*/
   @media screen and (max-width: 767px) {
@@ -90,7 +102,7 @@
     }
     .open-menu {
       opacity: 1;
-      height: 150px;
+      height: 190px;
       font-weight: bold;
     }
     .closed-menu {
@@ -105,6 +117,9 @@
       align-items: center;
     }
     li {
+      margin: 10px;
+    }
+    .button {
       margin: 10px;
     }
   }
@@ -138,7 +153,7 @@
     }
     .open-menu {
       opacity: 1;
-      height: 170px;
+      height: 220px;
       font-weight: bold;
     }
     .closed-menu {
@@ -154,8 +169,14 @@
       align-items: center;
     }
     li {
-      font-size: 25px;
+      font-size: 1.2em;
       margin: 10px;
+    }
+    .button {
+      margin: 10px;
+    }
+    .button-CV {
+      font-size: 1.2em;
     }
   }
   
@@ -186,7 +207,10 @@
     }
     li {
       margin: 10px;
-      font-size: 1.2em;
+      font-size: 1.5em;
+    }
+    .button {
+      margin-left: 5em;
     }
   }
   

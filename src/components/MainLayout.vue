@@ -4,23 +4,23 @@
       <div class="profil">
           <h1>Bienvenue !</h1>
           <p>  
-            Je suis Alexandra une jeune développeuse en herbe. 
-            Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets.
+            Je suis <strong>Alexandra Pinheiro</strong>, une jeune développeuse web &#x26; mobile en herbe. 
+            Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets personnels.
           </p>
       </div>
-      <div class="profile-image">
-          <img src="../assets/personal-img.png" class="perso-img" alt="profile-image">
+      <div class="profil-image">
+          <img src="../assets/personal-img.png" class="perso-img" alt="profil-image">
       </div>
     </section>
     <section id="social-links">
-        <a href="https://github.com/AlexandraPho">
+        <a href="https://github.com/AlexandraPho" target="_blank" rel="noreferrer noopener">
             <div class="link">
-              <img src="../assets/github.svg" class="img-link" alt="Github"> 
+              <img src="../assets/github.svg" class="github-logo" alt="Github-logo"> 
             </div>
         </a>
-        <a href="https://www.linkedin.com/in/alexandra-pinheiro/">
+        <a href="https://www.linkedin.com/in/alexandra-pinheiro/" target="_blank" rel="noreferrer noopener">
             <div class="link">
-                <img src="../assets/linkedin.svg" class="img-link" alt="Linkdin">        
+                <img src="../assets/linkedin.svg" class="linkdin-logo" alt="Linkdin-logo">        
             </div>
         </a>
       </section>
@@ -52,8 +52,16 @@
     color: #b65c7b;
     text-shadow: 4px 5px 1px rgb(115, 16, 61);
   }
-  .profile-image {
+  .profil-image {
     box-shadow: 20px 10px 60px 0 rgb(115, 16, 61);
+  }
+  a {
+    transition: transform .1s;
+  }
+  a:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   /*Smartphone version*/
@@ -79,7 +87,7 @@
       font-size: 1.2em;
       line-height: 1.5em;
     }
-    .profile-image {
+    .profil-image {
       display:flex;
       justify-content: center;
       margin-top: 30px;
@@ -98,8 +106,12 @@
       margin: 20px;
       justify-content: space-evenly;
     }
-    .img-link {
+    .github-logo {
       width: 3em;
+      padding: 3px;
+    }
+    .linkdin-logo {
+      width: 3.5em;
     }
   }
 
@@ -127,7 +139,7 @@
       font-size: 1.5em;
       line-height: 2em;
     }
-    .profile-image {
+    .profil-image {
       display: flex;
       justify-content: center;
       position: relative; 
@@ -145,7 +157,11 @@
       margin: 50px;
       justify-content: space-evenly;
     }
-    .img-link {
+    .github-logo {
+      width: 4em;
+      padding: 7px;
+    }
+    .linkdin-logo {
       width: 5em;
     }
   }
@@ -171,7 +187,7 @@
       font-size: 1.7em;
       line-height: 2em;
     }
-    .profile-image {
+    .profil-image {
       display: flex;
       justify-content: center;
       position: relative; 
@@ -189,8 +205,12 @@
       margin: 60px;
       justify-content: space-evenly;
     }
-    .img-link {
+    .github-logo {
       width: 5em;
+      padding: 7px;
+    }
+    .linkdin-logo {
+      width: 6em;
     }
   }
 </style>

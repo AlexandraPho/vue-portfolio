@@ -4,8 +4,10 @@
           Contactez-moi
       </h2>
       <div class="container">
-        <p class="email">alexandrapinheiro.dev@gmail.com</p>
-    </div>
+        <p class="contact-me">Je suis à votre disposition pour plus d'informations.</p>
+        <p class="email"><img class="contact-logo" src="../assets/mail.svg" alt="email-logo" HSPACE="10"> alexandrapinheiro.dev@gmail.com</p>
+        <p class="phone"><img class="contact-logo" src="../assets/phone.svg" alt="email-logo" HSPACE="10">07 61 43 95 98</p>
+      </div>
     </div>
   </template>
   
@@ -21,12 +23,21 @@
     .container {
       height: 20em;
       display: flex;
+      flex-direction: column;
       align-items: center;
       width: 100%;
       justify-content: center;
     }
-    p {
+    .contact-me {
+      font-weight: normal;
+      text-align: center;
+     }
+    p,
+    .contact-me{
       color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
     }
 
     /*Smartphone Version*/
@@ -43,10 +54,12 @@
         justify-content: center;
         margin: 80px 10px 30px;
       }
-     
       p {
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1em;
+      }
+      .contact-logo {
+        width: 2em;
       }
     }
     /*Tablet version*/
@@ -72,6 +85,9 @@
         font-size: 1.5em;
         font-weight: bold;
       }
+      .contact-logo {
+        width: 1.5em;
+      }
     }
 
     /*Desktop version*/
@@ -88,6 +104,9 @@
       }
       p {
         font-size: 2em;;
+      }
+      .contact-logo {
+        width: 2em;
       }
     }
     

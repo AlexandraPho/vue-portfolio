@@ -1,10 +1,15 @@
 <template>
   <footer>
-     <div class="resume">
+    <div class="resume">
       <p>Télécharger mon CV 
         <a href="assets/Alexandra-Pinheiro-CV.pdf" target="_blank"> 
         <strong class="click">&nbsp;ici</strong>
         </a>
+      </p>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright <img class="copyright-logo" src="../assets/copyright.svg" HSPACE="5">2022 Alexandra Pinheiro
       </p>
     </div>
   </footer>
@@ -17,7 +22,7 @@
 }
 
 </script>
-    
+
  <style scoped>
 
     footer {
@@ -35,8 +40,24 @@
       text-decoration: none;
       color: black;
     }
-    .click {
-        color: rgb(115, 16, 61);
+    a {
+      color: rgb(115, 16, 61);
+      transition: transform .1s;
+    }
+    a:visited {
+      color: #246647;
+    }
+    a:hover {
+      color: #246647;
+      -ms-transform: scale(2);
+      -webkit-transform: scale(2);
+      transform: scale(2);
+    }
+    a:active {
+      color: #246647;
+    }
+    .copyright-logo {
+      width: 1em;
     }
 
     /*Smartphone version*/ 
