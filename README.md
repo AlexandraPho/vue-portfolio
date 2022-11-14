@@ -5,15 +5,15 @@ Page de présentation
 ![Page de présentation](./Images/Presentation.png)
 Page projets
 ![Page de présentation](./Images/Projets.png)
-Pade contact
+Page contact
 ![Page de présentation](./Images/Contact.png)
 
 
 Mon portfolio a été créé en utilisant 
-Vue.Js 
-Node.Js
-CSS3
-VsCode
+- Vue.Js 
+- Node.Js
+- CSS3
+- VsCode
 
 ### Caractéristiques
 ```
