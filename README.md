@@ -1,6 +1,6 @@
 # vue-portfolio
 
-![Page d'accueil](Images/Pagedaccueil.png)
+![Page d'accueil](../Pagedaccueil.png)
 
 ![Page de présentation](../Images/Presentation.png)
 
