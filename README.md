@@ -1,8 +1,12 @@
 # vue-portfolio
-
-![Page d'accueil](../Pagedaccueil.png)
-
+Page d'accueil
+![Page d'accueil](../Images/Pagedaccueil.png)
+Page de présentation
 ![Page de présentation](./Images/Presentation.png)
+Page projets
+![Page de présentation](./Images/Projets.png)
+Pade contact
+![Page de présentation](./Images/Contact.png)
 
 ## Project setup
 ```
