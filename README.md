@@ -1,4 +1,4 @@
-# vue-portfolio
+# Portfolio
 Page d'accueil
 ![Page d'accueil](./Images/Pagedaccueil.png)
 Page de présentation
@@ -21,7 +21,7 @@ Mon portfolio a été créé en utilisant
 **🎨 Create from scratch**
 
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
