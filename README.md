@@ -2,7 +2,7 @@
 
 ![Page d'accueil](../Pagedaccueil.png)
 
-![Page de présentation](../Images/Presentation.png)
+![Page de présentation](./Images/Presentation.png)
 
 ## Project setup
 ```
