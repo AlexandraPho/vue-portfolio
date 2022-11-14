@@ -1,4 +1,6 @@
 # Portfolio
+
+
 Page d'accueil
 ![Page d'accueil](./Images/Pagedaccueil.png)
 Page de présentation
@@ -21,22 +23,3 @@ Mon portfolio a été créé en utilisant
 **🎨 Create from scratch**
 
 
-### Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
