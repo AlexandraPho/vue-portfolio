@@ -14,7 +14,7 @@
                 Mon portfolio actuel
               </p>
             </div>
-            <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart">
+            <img class="project-img" src="../assets/portfolio.png" alt="projet spotart">
             <div class="stack">
               <p class="stack-sticker-v">Vue.js</p>
             </div>
