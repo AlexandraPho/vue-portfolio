@@ -1,25 +1,25 @@
-# vue-portfolio
+# Portfolio
 
-![Page d'accueil](../Pagedaccueil.png)
 
+Page d'accueil
+![Page d'accueil](./Images/Pagedaccueil.png)
+Page de présentation
 ![Page de présentation](./Images/Presentation.png)
+Page projets
+![Page de présentation](./Images/Projets.png)
+Page contact
+![Page de présentation](./Images/Contact.png)
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Mon portfolio a été créé en utilisant 
+- Vue.Js 
+- Node.Js
+- CSS3
+- VsCode
 
-### Compiles and minifies for production
+### Caractéristiques
 ```
-npm run build
-```
+**📱 Responsive**
+**🎨 Create from scratch**
 
-### Lints and fixes files
-```
-npm run lint
-```
+
