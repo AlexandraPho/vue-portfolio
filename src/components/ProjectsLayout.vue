@@ -37,23 +37,6 @@
             </div>
           </a>
         </section>
-        <section class="card">
-          <a href ="https://github.com/AlexandraPho/vue-portfolio">
-          <div class="titles">
-              <h3 class="project-titles">
-                O'cuisine
-              </h3>
-              <p>
-                Site de recettes de cuisines
-              </p>
-            </div>
-              <img class="project-img" src="../assets/ocuisine.jpg" alt="projet ocuisine">
-            <div class="stack">
-              <p class="stack-sticker-w">Wordpress</p>
-              <p class="stack-sticker-v">Vue.js</p>
-            </div>
-          </a>
-        </section> 
       </div>
     </div>
   </template>
