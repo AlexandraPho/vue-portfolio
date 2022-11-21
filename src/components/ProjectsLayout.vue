@@ -30,7 +30,7 @@
                 Découvrir des oeuvres d'art
               </p>
             </div>
-              <img class="project-img" src="../assets/spotart.jpg" alt="projet spotart">
+              <img class="project-img" src="../assets/spotart.png" alt="projet spotart">
             <div class="stack">
               <p class="stack-sticker-w">Wordpress</p>
               <p class="stack-sticker-v">Vue.js</p>
