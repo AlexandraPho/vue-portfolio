@@ -1,0 +1,408 @@
+
+body{
+  font-family: 'Kaushan Script', cursive;
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+p {
+  font-family: 'Belleza', sans-serif;
+}
+.titles-components {
+  text-transform: uppercase;
+  color: rgb(115, 16, 61);
+  text-shadow: 2px 3px 1px #B65C7B;
+}
+.block-container {
+    margin: 40px 0px 0px;
+  }
+  #information {
+    background: #246647;
+    align-items: center;
+  }
+  .container {
+    background: #246647;
+    width: 100%;
+  }
+  h1,
+  p{
+    color: white;
+  }
+  h1 {
+    color: #b65c7b;
+    text-shadow: 4px 5px 1px rgb(115, 16, 61);
+  }
+  .profil-image {
+    box-shadow: 20px 10px 60px 0 rgb(115, 16, 61);
+  }
+  a {
+    transition: transform .1s;
+  }
+  a:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .skills {
+    background-color: #b65c7b;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Belleza', sans-serif;
+  }
+  .titles,
+  .skills-titles {
+    color: white;
+  }
+  
+  /*Smartphone version*/
+  @media only screen and (max-width: 767px) {
+    #information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 40em;
+    }
+    .profil {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 0px 30px;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: normal;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    .profil-image {
+      display:flex;
+      justify-content: center;
+      margin-top: 10px;
+      position: relative; 
+      width: 180px; 
+      height: 180px; 
+      overflow: hidden; 
+      border-radius: 50%; 
+    }
+    .perso-img {
+      width: 100%; 
+      height: 130%;
+    }
+    #social-links{
+      display: flex;
+      margin: 20px;
+      justify-content: space-evenly;
+    }
+    .github-logo {
+      width: 3em;
+      padding: 3px;
+    }
+    .linkdin-logo {
+      width: 3.5em;
+    }
+    .block-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .titles-components {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 80px 10px 30px;
+      font-size: 1.7em;
+    }
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .text {
+      padding: 20px;
+    }
+    .titles {
+      font-size: large;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    .soft_hard-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skills-titles {
+      font-size: large;
+      margin: 1.5em;
+    }
+    .soft-skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .skills {
+      margin: 5px;
+      padding: 10px;
+    }
+    .stack-tech {
+      display: flex;
+      margin: 1.5em;
+      flex-direction: column;
+      align-items: center;
+    }
+    h4 {
+      color: white;
+      font-size: large;
+    }
+    .logos {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo-techs {
+      width: 50px;
+      margin: 10px;
+    }
+  }
+
+  /*Tablet version*/
+  @media only screen and (min-width: 768px) {
+    #information {
+      display: flex;
+      height: 65em;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .profil {
+      width: 50%;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 0px 30px 0px 20px;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 4em;
+      margin: 40px 0px;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 2em;
+    }
+    .profil-image {
+      display: flex;
+      justify-content: center;
+      position: relative; 
+      width: 300px; 
+      height: 300px; 
+      overflow: hidden; 
+      border-radius: 50%; 
+    }
+    .perso-img {
+      width: 100%; 
+      height: 130%;
+    }
+    #social-links{
+      display: flex;
+      margin: 50px;
+      justify-content: space-evenly;
+    }
+    .github-logo {
+      width: 4em;
+      padding: 7px;
+    }
+    .linkdin-logo {
+      width: 5em;
+    }
+    .block-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px;
+    }
+    .titles-components {
+      margin: 80px 10px 30px;
+      font-size: 2.5em;
+    }
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
+    .text {
+      padding: 40px;
+    }
+    .titles {
+      font-size: x-large;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+    .soft_hard-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skills-titles {
+      font-size: x-large;
+      margin: 2.5em;
+    }
+    .soft-skills {
+      margin: 2em;
+      font-size: 1.5em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skills {
+      margin: 15px;
+      padding: 15px;
+    }
+    .stack-tech {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1.5em;
+    }
+    h4 {
+      color: white;
+      font-size: 1.5em;
+    }
+    .logos {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo-techs {
+      width: 5em;
+      margin: 2em;
+    }
+  }
+
+  /*Desktop version*/
+  @media only screen and (min-width: 1200px) {
+    #information {
+      height: 50em;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .profil {
+      display: flex;
+      justify-content: center;
+      margin: 30px 30px 20px 20px;
+    }
+    h1 {
+      font-size: 5em;
+    }
+    p {
+      font-size: 1.7em;
+      line-height: 2em;
+    }
+    .profil-image {
+      display: flex;
+      justify-content: center;
+      position: relative; 
+      width: 400px; 
+      height: 400px; 
+      overflow: hidden; 
+      border-radius: 50%; 
+    }
+    .perso-img {
+      width: 100%; 
+      height: 130%;
+    }
+    #social-links{
+      display: flex;
+      margin: 60px;
+      justify-content: space-evenly;
+    }
+    .github-logo {
+      width: 5em;
+      padding: 7px;
+    }
+    .linkdin-logo {
+      width: 6em;
+    }
+    .block-container {
+      padding: 50px 0px;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .titles-components {
+      margin: 80px 10px;
+      font-size: 2.5em;
+    }
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px;
+    }
+    .titles {
+      font-size: x-large;
+      text-transform: uppercase;
+    }
+    p {
+      text-align: center;
+      width: 25em;
+      font-size: 1.6em;
+    }
+    .skills-titles {
+      font-size: x-large;
+      margin: 2.5em;
+    }
+    .soft-skills {
+      display: flex;
+      width: 20em;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0.5em;
+    }
+    .skills {
+      margin: 15px;
+      padding: 15px;
+    }
+    .stack-tech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 30em;
+    }
+    .logo-techs {
+      width: 4em;
+      margin: 1em;
+    }
+  }
+
+  
