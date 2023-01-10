@@ -122,7 +122,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 58em;
+      height: 60em;
     }
     .profil {
       width: 50%;
@@ -169,6 +169,7 @@
   /*Desktop version*/
   @media only screen and (min-width: 1200px) {
     #information {
+      flex-direction: row;
       height: 50em;
       display: flex;
       align-items: center;
@@ -176,6 +177,7 @@
       justify-content: center;
     }
     .profil {
+      width: 35%;
       display: flex;
       justify-content: center;
       margin: 30px 30px 20px 20px;
