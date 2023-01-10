@@ -4,7 +4,7 @@
       <div class="profil">
           <h1>Bienvenue !</h1>
           <p>  
-            Je suis <strong>Alexandra Pinheiro</strong>, une jeune développeuse web &#x26; mobile en herbe. 
+            Je suis <strong>Alexandra Pinheiro</strong>, une jeune développeuse web &#x26; web mobile en herbe. 
             Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets personnels.
           </p>
       </div>
@@ -54,6 +54,7 @@
   }
   .profil-image {
     box-shadow: 20px 10px 60px 0 rgb(115, 16, 61);
+    position: inherit;
   }
   a {
     transition: transform .1s;
@@ -91,8 +92,7 @@
     .profil-image {
       display:flex;
       justify-content: center;
-      margin-top: 10px;
-      position: relative; 
+      margin-top: 10px; 
       width: 180px; 
       height: 180px; 
       overflow: hidden; 
@@ -120,10 +120,9 @@
   @media only screen and (min-width: 768px) {
     #information {
       display: flex;
-      height: 65em;
-      flex-wrap: nowrap;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      height: 58em;
     }
     .profil {
       width: 50%;
@@ -143,11 +142,11 @@
     .profil-image {
       display: flex;
       justify-content: center;
-      position: relative; 
       width: 300px; 
       height: 300px; 
       overflow: hidden; 
       border-radius: 50%; 
+      margin: 20px;
     }
     .perso-img {
       width: 100%; 
@@ -180,20 +179,22 @@
       display: flex;
       justify-content: center;
       margin: 30px 30px 20px 20px;
+      flex-direction: column;
+      align-items: center
     }
     h1 {
-      font-size: 5em;
+      font-size: 4em;
     }
     p {
-      font-size: 1.7em;
+      width: 20em;
+      font-size: 1.4em;
       line-height: 2em;
     }
     .profil-image {
       display: flex;
       justify-content: center;
-      position: relative; 
-      width: 400px; 
-      height: 400px; 
+      width: 350px; 
+      height: 350px; 
       overflow: hidden; 
       border-radius: 50%; 
     }

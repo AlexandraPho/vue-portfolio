@@ -41,7 +41,7 @@
   .header-container {
     background-color: white;
     width: 100%;
-    position: absolute;
+    position: fixed;
   }
   .nav-content {
     display: flex;
@@ -126,10 +126,6 @@
   
   /*Tablet version*/
   @media screen and (min-width: 768px) {
-    .header-container {
-      position: absolute;
-      width: 100%;
-    }
     .menu-header {
       display: flex;
       justify-content: space-between;
@@ -191,8 +187,8 @@
       align-items: center;
     }
     .header-logo {
-      width: 8em;
-      padding: 20px;
+      width: 6em;
+      padding: 15px;
     }
     .img-burger-menu {
       display: none;
@@ -207,7 +203,7 @@
     }
     li {
       margin: 10px;
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     .button {
       margin-left: 5em;

@@ -99,11 +99,11 @@
         margin: 50px 0px;
       }
       .titles-components {
-        margin: 80px 10px;
-        font-size: 2.5em;
+        margin: 70px 10px;
+        font-size: 2em;
       }
       p {
-        font-size: 2em;;
+        font-size: 1.3em;;
       }
       .contact-logo {
         width: 2em;

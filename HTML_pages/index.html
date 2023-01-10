@@ -9,80 +9,102 @@
     <title>Alexandra Pinheiro</title>
 </head>
 <body>
+  <header>
+    <div>
+      <!-- Menu container-->
+      <div class="header-container"> 
+        <div class="menu-header">
+          <!--LOGO-->
+           <router-link :to="{name: 'HomeApp'}"><img src="../assets/AP.png" class="header-logo"></router-link> 
+            <!--Hamburger icon with click method-->
+            <img src="../assets/menu.svg" class="img-burger-menu" @click="showMenu()"> 
+        </div>
+            <!--Menu content-->
+            <nav class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
+              <ul class="nav-items">
+                <router-link :to="{name: 'AboutMeApp'}"><li>Je me présente</li></router-link>
+                <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
+                <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
+              </ul>
+              <button class="button"><a href="assets/Alexandra-Pinheiro-CV.pdf" target="_blank" class="button-CV">Télécharger mon CV</a></button>
+            </nav>
+      </div>
+    </div>
+  </header>
     <div class="block-container">
-        <section id="information">
-          <div class="profil">
-              <h1>Bienvenue !</h1>
-              <p>  
-                Je suis <strong>Alexandra Pinheiro</strong>, une jeune développeuse web &#x26; mobile en herbe. 
-                Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets personnels.
-              </p>
-          </div>
-          <div class="profil-image">
-              <img src="./assets/personal-img.png" class="perso-img" alt="profil-image">
-          </div>
+      <section id="information">
+        <div class="profil">
+          <h1>Bienvenue !</h1>
+            <p>  
+              Je suis <strong>Alexandra Pinheiro</strong>, une jeune développeuse web &#x26; mobile en herbe. 
+              Dans ce portfolio vous découvrirez qui je suis ainsi que mes projets personnels.
+            </p>
+        </div>
+        <div class="profil-image">
+          <img src="./assets/personal-img.png" class="perso-img" alt="profil-image">
+        </div>
         </section>
         <section id="social-links">
-            <a href="https://github.com/AlexandraPho" target="_blank" rel="noreferrer noopener">
-                <div class="link">
-                  <img src="./assets/github.svg" class="github-logo" alt="Github-logo"> 
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/alexandra-pinheiro/" target="_blank" rel="noreferrer noopener">
-                <div class="link">
-                    <img src="./assets/linkedin.svg" class="linkdin-logo" alt="Linkdin-logo">        
-                </div>
-            </a>
-          </section>
+          <a href="https://github.com/AlexandraPho" target="_blank" rel="noreferrer noopener">
+            <div class="link">
+              <img src="./assets/github.svg" class="github-logo" alt="Github-logo"> 
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alexandra-pinheiro/" target="_blank" rel="noreferrer noopener">
+            <div class="link">
+                <img src="./assets/linkedin.svg" class="linkdin-logo" alt="Linkdin-logo">        
+            </div>
+          </a>
+        </section>
       </div>
       <div class="block-container">
         <h2 class="titles-components">
           Présentation
         </h2>
-          <div class="container">
-            <section class="about-me">
-              <div class="text">
-                <h3 class="titles">
-                  Curieuse ?
-                </h3>
-                <p>
-                  J'ai toujours été la personne polyvalente dans mes divers emplois. J'aime par dessus tout, apprendre.<br>Je suis <strong>curieuse!</strong><br>
-                  L'apprentissage est donc pour moi une façon de me renouveler et découvrir de nouveaux horizons.
-                </p>
-              </div>
-              <div class="text">
-                <h3 class="titles">
-                  Motivé !
-                </h3>
-                <p>
-                  C'est en 2020 que je me lance à la découverte du <strong>HTML </strong>et <strong>CSS</strong>  en suivant des cours sur diverses plateformes que j'auto-finance.
-                  En septembre 2021, après un an de bataille pour trouver un organisme qui accepte de m'aider à financer ma formation, je rejoins la tant attendu promo Yuna de l'école O'Clock. La formation est intensive et dure 6 mois.
-                </p>
-                </div>
-            </section>
-            <section class="soft_hard-skills">
+        <div class="container">
+          <section class="about-me">
+            <div class="text">
               <h3 class="titles">
-                Mes Soft & hard skills
+                Curieuse ?
               </h3>
-              <div class="soft-skills">
-                <span class="skills">Curieuse</span>
-                <span class="skills">Autonome</span>
-                <span class="skills">Esprit d'équipe</span>
-                <span class="skills">Communication</span>
-              </div>
-              <div class="stack-tech">
-                <h4>Les outils techs que j'utilise</h4>
-                <div class="logos">
-                  <img class="logo-techs" alt="logo-html" src="./assets/html5.svg">
-                  <img class="logo-techs" alt="logo-css" src="./assets/css3.svg">
-                  <img class="logo-techs" alt="logo-vue" src="./assets/vuejs.svg">
-                  <img class="logo-techs" alt="logo-vue" src="./assets/wordpress.svg">
-                  <img class="logo-techs" alt="logo-php" src="./assets/php.svg">
-                  <img class="logo-techs" alt="logo-linux" src="./assets/linux.svg">
-                </div> 
-              </div>
-            </section> 
-          </div>
+              <p>
+                J'ai toujours été la personne polyvalente dans mes divers emplois. J'aime par dessus tout, apprendre.<br>Je suis <strong>curieuse!</strong><br>
+                L'apprentissage est donc pour moi une façon de me renouveler et découvrir de nouveaux horizons.
+              </p>
+            </div>
+            <div class="text">
+              <h3 class="titles">
+                Motivé !
+              </h3>
+              <p>
+                C'est en 2020 que je me lance à la découverte du <strong>HTML </strong>et <strong>CSS</strong>  en suivant des cours sur diverses plateformes que j'auto-finance.
+                En septembre 2021, après un an de bataille pour trouver un organisme qui accepte de m'aider à financer ma formation, je rejoins la tant attendu promo Yuna de l'école O'Clock. La formation est intensive et dure 6 mois.
+              </p>
+            </div>
+          </section>
+          <section class="soft_hard-skills">
+            <h3 class="titles">
+              Mes Soft & hard skills
+            </h3>
+            <div class="soft-skills">
+              <span class="skills">Curieuse</span>
+              <span class="skills">Autonome</span>
+              <span class="skills">Esprit d'équipe</span>
+              <span class="skills">Communication</span>
+            </div>
+            <div class="stack-tech">
+              <h4>Les outils techs que j'utilise</h4>
+              <div class="logos">
+                <img class="logo-techs" alt="logo-html" src="./assets/html5.svg">
+                <img class="logo-techs" alt="logo-css" src="./assets/css3.svg">
+                <img class="logo-techs" alt="logo-vue" src="./assets/vuejs.svg">
+                <img class="logo-techs" alt="logo-vue" src="./assets/wordpress.svg">
+                <img class="logo-techs" alt="logo-php" src="./assets/php.svg">
+                <img class="logo-techs" alt="logo-linux" src="./assets/linux.svg">
+              </div> 
+            </div>
+          </section> 
+        </div>
       </div>
 </body>
 </html>

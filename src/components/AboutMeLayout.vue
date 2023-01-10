@@ -9,25 +9,21 @@
         <section class="about-me">
           <div class="text">
             <h3 class="titles">
-              Curieuse ?
+              Curieuse et Motivé !
             </h3>
             <p>
-              J'ai toujours été la personne polyvalente dans mes divers emplois. J'aime par dessus tout, apprendre.<br>Je suis <strong>curieuse!</strong><br>
-              L'apprentissage est donc pour moi une façon de me renouveler et découvrir de nouveaux horizons.
+              Oui ! Mais dans le bon sens du terme.<br>Aussi longtemps que je me souvienne, j'ai toujours aimé apprendre. 
+            </p>
+            <p>
+              Grâce à ma formation artistique mais aussi à mes expériences professionnelles, j'ai acquis des <strong>compétences transversales</strong> comme conceptualiser un projet, le maquetter, établir un cahier des charges.<br>Mais aussi l'organisation, l'écoute, le conseil ainsi que des qualités relationnelles.
+              <br>En 2020, je me forme en autodidacte au base de la programmation informatique en suivant des cours sur diverses plateformes que j'auto-finance.
+              Puis j'intègre l'école O'Clock pour effectuer la formation de développeur web et web mobile. 
+              <br>Depuis, je continue à coder avec plaisir et passion.
             </p>
           </div>
-          <div class="text">
-            <h3 class="titles">
-              Motivé !
-            </h3>
-            <p>
-              C'est en 2020 que je me lance à la découverte du <strong>HTML </strong>et <strong>CSS</strong>  en suivant des cours sur diverses plateformes que j'auto-finance.
-              En septembre 2021, après un an de bataille pour trouver un organisme qui accepte de m'aider à financer ma formation, je rejoins la tant attendu promo Yuna de l'école O'Clock. La formation est intensive et dure 6 mois.
-            </p>
-            </div>
         </section>
         <section class="soft_hard-skills">
-          <h3 class="titles">
+          <!--<h3 class="titles">
             Mes Soft & hard skills
           </h3>
           <div class="soft-skills">
@@ -35,7 +31,7 @@
             <span class="skills">Autonome</span>
             <span class="skills">Esprit d'équipe</span>
             <span class="skills">Communication</span>
-          </div>
+          </div>-->
           <div class="stack-tech">
             <h4>Les outils techs que j'utilise</h4>
             <div class="logos">
@@ -224,13 +220,13 @@
       padding: 50px 0px;
     }
     .container {
-      display: flex;
+     
       align-items: center;
       justify-content: center;
     }
     .titles-components {
       margin: 80px 10px;
-      font-size: 2.5em;
+      font-size: 2em;
     }
     .about-me {
       display: flex;
@@ -240,10 +236,7 @@
       padding: 15px;
     }
     .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 25px;
+      padding: 5px;
     }
     .titles {
       font-size: x-large;
@@ -251,8 +244,8 @@
     }
     p {
       text-align: center;
-      width: 25em;
-      font-size: 1.6em;
+      width: 60em;
+      font-size: 1.1em;
     }
     .skills-titles {
       font-size: x-large;

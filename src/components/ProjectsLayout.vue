@@ -27,7 +27,7 @@
                 Spotart
               </h3>
               <p>
-                Découvrir des oeuvres d'art
+                L'Art en ligne
               </p>
             </div>
               <img class="project-img" src="../assets/spotart.png" alt="projet spotart">
@@ -68,6 +68,26 @@
   p {
     color: rgb(39 48 31);
   }
+  .project-titles {
+      margin: 0.5em;
+    }
+  .stack-sticker-w{
+      background-color: #9999eb;
+      color: black;
+      padding: 5px;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+    .stack-sticker-v {
+      background-color: #a7e2b4;
+      color: black;
+      padding: 5px;
+      border-radius: 3px;
+    }
+    .stack-sticker-v,
+    .stack-sticker-w {
+      font-size: 0.8em;
+    }
    
   /*Smartphone version*/
   @media screen and (max-width: 767px) {
@@ -110,19 +130,6 @@
     .stack {
       display: flex;
     }
-    .stack-sticker-w{
-      background-color: #404078;
-      color: white;
-      padding: 5px;
-      border-radius: 3px;
-      margin-right: 5px;
-    }
-    .stack-sticker-v {
-      background-color: #0e6e22;
-      color: white;
-      padding: 5px;
-      border-radius: 3px;
-    }
   }
   
   /*Tablet version*/
@@ -164,24 +171,11 @@
       font-size: 1.5em;
     }
     .project-img {
-      width: 10em;
+      width: 18em;
       border-radius: 5px;
     }
     .stack {
       display: flex;
-    }
-    .stack-sticker-w{
-      background-color: #404078;
-      color: white;
-      padding: 5px;
-      border-radius: 3px;
-      margin-right: 5px;
-    }
-    .stack-sticker-v {
-      background-color: #0e6e22;
-      color: white;
-      padding: 5px;
-      border-radius: 3px;
     }
   }
   
@@ -193,8 +187,8 @@
       align-items: center;
     }
     .titles-components {
-      margin: 80px 10px;
-      font-size: 2.5em;
+      margin: 70px 10px;
+      font-size: 2em;
     }
     .container {
       display: flex;
@@ -214,28 +208,18 @@
       align-items: center;
       width: 20em;
     }
+    .project-titles {
+      margin: 0.5em;
+    }
     p {
       text-align: center;
     }
     .project-img {
-      width: 12em;
+      width: 15em;
       border-radius: 5px;
     }
     .stack {
       display: flex;
-    }
-    .stack-sticker-w{
-      background-color: #404078;
-      color: white;
-      padding: 5px;
-      border-radius: 3px;
-      margin-right: 5px;
-    }
-    .stack-sticker-v {
-      background-color: #0e6e22;
-      color: white;
-      padding: 5px;
-      border-radius: 3px;
     }
   }
 
