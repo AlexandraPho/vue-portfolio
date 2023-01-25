@@ -1,7 +1,5 @@
 <template>
   <div class="block-container">
-    
-      
     <h2 class="titles-components">
       Présentation
     </h2>
@@ -12,9 +10,6 @@
               Curieuse et Motivé !
             </h3>
             <p>
-              Oui ! Mais dans le bon sens du terme.<br>Aussi longtemps que je me souvienne, j'ai toujours aimé apprendre. 
-            </p>
-            <p>
               Grâce à ma formation artistique mais aussi à mes expériences professionnelles, j'ai acquis des <strong>compétences transversales</strong> comme conceptualiser un projet, le maquetter, établir un cahier des charges.<br>Mais aussi l'organisation, l'écoute, le conseil ainsi que des qualités relationnelles.
               <br>En 2020, je me forme en autodidacte au base de la programmation informatique en suivant des cours sur diverses plateformes que j'auto-finance.
               Puis j'intègre l'école O'Clock pour effectuer la formation de développeur web et web mobile. 
@@ -23,15 +18,15 @@
           </div>
         </section>
         <section class="soft_hard-skills">
-          <!--<h3 class="titles">
+          <h3 class="titles">
             Mes Soft & hard skills
           </h3>
           <div class="soft-skills">
-            <span class="skills">Curieuse</span>
+            <span class="skills">Créative</span>
             <span class="skills">Autonome</span>
-            <span class="skills">Esprit d'équipe</span>
-            <span class="skills">Communication</span>
-          </div>-->
+            <span class="skills">Persévérante</span>
+            <span class="skills">Écoute active</span>
+          </div>
           <div class="stack-tech">
             <h4>Les outils techs que j'utilise</h4>
             <div class="logos">
@@ -41,6 +36,7 @@
               <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
               <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
               <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
+              <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
             </div> 
           </div>
         </section> 
@@ -56,10 +52,13 @@
 
 <style scoped>
   
+  .container {
+    background: #CD921E;
+  }
   .skills {
-    background-color: #b65c7b;
-    color: white;
-    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 35px;
     font-family: 'Belleza', sans-serif;
   }
   .titles,
@@ -226,7 +225,7 @@
     }
     .titles-components {
       margin: 80px 10px;
-      font-size: 2em;
+      font-size: 3em;
     }
     .about-me {
       display: flex;

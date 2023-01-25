@@ -12,24 +12,23 @@
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Kaushan+Script&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Kaushan+Script&display=swap');*/
   p {
     font-family: 'Belleza', sans-serif;
   }
   body{
-    font-family: 'Kaushan Script', cursive;
+    font-family: open sans,sans-serif, Arial, Helvetica, sans-serif;
     background-color: white;
     margin: 0;
     overflow-x: hidden;
   }
   .container {
-    background: #246647;
     width: 100%;
   }
   .titles-components {
     text-transform: uppercase;
-    color: rgb(115, 16, 61);
-    text-shadow: 2px 3px 1px #B65C7B;
+    color: #262727;
+    text-shadow: 0 0 7px #a1828d;
   }
 
 </style>

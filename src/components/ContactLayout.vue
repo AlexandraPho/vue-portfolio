@@ -1,10 +1,10 @@
 <template>
     <div class="block-container">
       <h2 class="titles-components">
-          Contactez-moi
+        Contact
       </h2>
       <div class="container">
-        <p class="contact-me">Je suis à votre disposition pour plus d'informations.</p>
+        <p class="contact-me">Vous souhaitez travailler avec moi, n'hésitez pas à me contacter</p>
         <p class="email"><img class="contact-logo" src="../assets/mail.svg" alt="email-logo" HSPACE="10"> alexandrapinheiro.dev@gmail.com</p>
         <p class="phone"><img class="contact-logo" src="../assets/phone.svg" alt="email-logo" HSPACE="10">07 61 43 95 98</p>
       </div>
@@ -21,6 +21,7 @@
   <style scoped>
 
     .container {
+      background: #262727;
       height: 20em;
       display: flex;
       flex-direction: column;
@@ -100,7 +101,7 @@
       }
       .titles-components {
         margin: 70px 10px;
-        font-size: 2em;
+        font-size: 3em;
       }
       p {
         font-size: 1.3em;;

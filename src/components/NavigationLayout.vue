@@ -4,7 +4,7 @@
     <div class="header-container"> 
       <div class="menu-header">
         <!--LOGO-->
-         <router-link :to="{name: 'HomeApp'}"><img src="../assets/AP.png" class="header-logo"></router-link> 
+         <router-link :to="{name: 'HomeApp'}"><img src="../assets/AP.png" class="header-logo"></router-link>
           <!--Hamburger icon with click method-->
           <img src="../assets/menu.svg" class="img-burger-menu" @click="showMenu()"> 
       </div>
@@ -15,7 +15,7 @@
               <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
-            <button class="button"><a href="assets/Alexandra-Pinheiro-CV.pdf" target="_blank" class="button-CV">Télécharger mon CV</a></button>
+            <button class="button"><a href="../assets/resume_AP.pdf" download target="_blank" class="button-CV">Télécharger mon CV</a></button>
           </nav>
     </div>
   </div>
@@ -58,22 +58,24 @@
     padding: 0;
   }
   li {
-    color: rgb(115, 16, 61);
+    color: #262727;
+    font-weight: bolder;
     padding: 0 10px;
+  }
+  li:hover {
+    color: #CD921E;
   }
   a {
     text-decoration: none;
   }
   .button {
-    background-color: rgb(115, 16, 61);
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    border: #73103d solid 1px;
   }
   .button-CV {
-    color: white;
-    font-family:'Kaushan Script', cursive;
+    color: black;
   }
   
   /*Mobile version - hidden hamburger menu*/
@@ -82,7 +84,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: rgb(115, 16, 61);
       }
     .header-logo {
       padding: 20px;

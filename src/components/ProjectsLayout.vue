@@ -55,15 +55,19 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    transition: background-color 0.5s;
    }
-  .card:hover {
-    border: 3px solid #B65C7B;
-    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
-    z-index: 500;
+  .project-img {
+    transition: all .2s ease-in-out;
    }
+  .project-img:hover {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: scale(1.5);
+  }
    h3 {
-    color: rgb(115, 16, 61);
-    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
   }
   p {
     color: rgb(39 48 31);
@@ -188,7 +192,7 @@
     }
     .titles-components {
       margin: 70px 10px;
-      font-size: 2em;
+      font-size: 3em;
     }
     .container {
       display: flex;

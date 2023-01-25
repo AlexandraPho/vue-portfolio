@@ -2,14 +2,14 @@
   <footer>
     <div class="resume">
       <p>Télécharger mon CV 
-        <a href="assets/Alexandra-Pinheiro-CV.pdf" target="_blank"> 
+        <a href="../assets/resume_AP.pdf" target="_blank"> 
         <strong class="click">&nbsp;ici</strong>
         </a>
       </p>
     </div>
     <div class="copyright">
       <p>
-        Copyright <img class="copyright-logo" src="../assets/copyright.svg" HSPACE="5">2022 Alexandra Pinheiro
+        <img class="copyright-logo" src="../assets/copyright.svg" HSPACE="5">2022 Alexandra PINHEIRO, Tous droits réservés
       </p>
     </div>
   </footer>
