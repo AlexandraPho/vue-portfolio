@@ -9,7 +9,7 @@
     </div>
     <div class="copyright">
       <p>
-        <img class="copyright-logo" src="../assets/copyright.svg" HSPACE="5">2022 Alexandra PINHEIRO, Tous droits réservés
+        <img class="copyright-logo" src="../assets/copyright.svg" HSPACE="5">2022 - Alexandra Pinheiro - Tous droits réservés
       </p>
     </div>
   </footer>
@@ -48,7 +48,7 @@
       color: #246647;
     }
     a:hover {
-      color: #246647;
+      color: #CD921E;
       -ms-transform: scale(2);
       -webkit-transform: scale(2);
       transform: scale(2);

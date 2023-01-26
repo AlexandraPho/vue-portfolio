@@ -68,11 +68,9 @@
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
-
   .first div,
   .second div {
     text-shadow: 0 0 2px rgb(253, 242, 247), 0 0 7px rgba(245, 242, 242, 0.3);
-
   }
 
   /*Smartphone version*/
@@ -339,13 +337,17 @@
       display: flex;
       margin: 60px;
       justify-content: center;
+      align-items: center;
     }
     .github-logo {
-      width: 5em;
-      padding: 7px;
+      width: 4.8em;
     }
     .linkdin-logo {
-      width: 6em;
+      width: 4.5em;
+    }
+   
+    .linkdin-logo:hover {
+      color: #af2865;
     }
   }
 </style>

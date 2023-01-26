@@ -15,7 +15,7 @@
               <router-link :to="{name: 'ProjectsApp'}"><li>Mes projets</li></router-link>
               <router-link :to="{name: 'ContactApp'}"><li>Contact</li></router-link>
             </ul>
-            <button class="button"><a href="../assets/resume_AP.pdf" download target="_blank" class="button-CV">Télécharger mon CV</a></button>
+            <button class="button-CV"><a href="../assets/resume_AP.pdf" download target="_blank" class="button">Télécharger mon CV</a></button>
           </nav>
     </div>
   </div>
@@ -68,16 +68,46 @@
   a {
     text-decoration: none;
   }
-  .button {
-    background-color: white;
-    border-radius: 25px;
-    padding: 15px;
-    border: #73103d solid 1px;
-  }
   .button-CV {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+    background-color: white;
+  }
+  .button-CV a {
+    position: relative; 
+    z-index: 1;
     color: black;
   }
-  
+  .button-CV:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #af2865;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  .button-CV:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+  a:hover {
+    color: #CD921E;
+  }
+
+
   /*Mobile version - hidden hamburger menu*/
   @media screen and (max-width: 767px) {
     .menu-header {
@@ -120,8 +150,18 @@
     li {
       margin: 10px;
     }
-    .button {
-      margin: 10px;
+    .button-CV {
+      padding: 15px 20px;
+      margin: 15px;
+      border-radius: 50px;
+    }
+    .button-CV {
+    font-weight: 700;
+    font-size: 12px;
+    }
+    .button-CV:after {
+      height: 450%;
+      width: 140%;
     }
   }
   
@@ -150,7 +190,7 @@
     }
     .open-menu {
       opacity: 1;
-      height: 220px;
+      height: 250px;
       font-weight: bold;
     }
     .closed-menu {
@@ -166,14 +206,21 @@
       align-items: center;
     }
     li {
-      font-size: 1.2em;
-      margin: 10px;
-    }
-    .button {
+      font-size: 1.5em;
       margin: 10px;
     }
     .button-CV {
-      font-size: 1.2em;
+      padding: 15px 20px;
+      margin: 15px;
+      border-radius: 50px;
+    }
+    .button-CV {
+    font-weight: 700;
+    font-size: 1em;
+    }
+    .button-CV:after {
+      height: 450%;
+      width: 140%;
     }
   }
   
@@ -200,15 +247,33 @@
       flex-direction: row;
     }
     .nav-items {
-      flex-direction: row
+      flex-direction: row;
+      margin-right: 5em;
     }
     li {
       margin: 10px;
       font-size: 1.3em;
     }
-    .button {
-      margin-left: 5em;
+    .button-CV {
+      padding: 15px 20px;
+      margin: 20px;
+      border-radius: 50px;
+      font-size: 1em;
     }
   }
-  
+  @media screen and (min-width: 1500px) {
+    .nav-items{
+      margin-right: 9em;
+    }
+  }
+  @media screen and (min-width: 1860px) {
+    .nav-items{
+     margin-right: 16em;
+    }
+  }
+  @media screen and (min-width: 2050px) {
+    .nav-items{
+     margin-right: 25em;
+    }
+  }
 </style>

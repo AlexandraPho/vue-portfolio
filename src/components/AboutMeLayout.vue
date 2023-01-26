@@ -10,10 +10,10 @@
               Curieuse et Motivé !
             </h3>
             <p>
-              Grâce à ma formation artistique mais aussi à mes expériences professionnelles, j'ai acquis des <strong>compétences transversales</strong> comme conceptualiser un projet, le maquetter, établir un cahier des charges.<br>Mais aussi l'organisation, l'écoute, le conseil ainsi que des qualités relationnelles.
+              Grâce à mon parcours artistique mais aussi à mes expériences professionnelles, j'ai acquis de nombreuses <strong>compétences transversales</strong> comme conceptualiser un projet, le maquetter, établir un cahier des charges.<br>Mais aussi l'organisation, l'écoute, le conseil ainsi que des qualités relationnelles.
               <br>En 2020, je me forme en autodidacte au base de la programmation informatique en suivant des cours sur diverses plateformes que j'auto-finance.
-              Puis j'intègre l'école O'Clock pour effectuer la formation de développeur web et web mobile. 
-              <br>Depuis, je continue à coder avec plaisir et passion.
+              Afin d'avoir des connaissances solides, je décide d'intègrer l'école O'Clock pour effectuer la formation de développeur web et web mobile. 
+              <br>Suite à cette formation, je continue à me former et je reste toujours en veille technologique.
             </p>
           </div>
         </section>
@@ -28,14 +28,14 @@
             <span class="skills">Écoute active</span>
           </div>
           <div class="stack-tech">
-            <h4>Les outils techs que j'utilise</h4>
+            <h4>Mes outils</h4>
             <div class="logos">
-              <img class="logo-techs" alt="logo-html" src="../assets/html5.svg">
-              <img class="logo-techs" alt="logo-css" src="../assets/css3.svg">
+              <img class="logo-techs" alt="logo-html" src="../assets/html.svg">
+              <img class="logo-techs" alt="logo-css" src="../assets/css.png">
               <img class="logo-techs" alt="logo-vue" src="../assets/vuejs.svg">
               <img class="logo-techs" alt="logo-vue" src="../assets/wordpress.svg">
-              <img class="logo-techs" alt="logo-php" src="../assets/php.svg">
-              <img class="logo-techs" alt="logo-linux" src="../assets/linux.svg">
+              <img class="logo-techs" alt="logo-php" src="../assets/php.png">
+              <img class="logo-techs" alt="logo-tailwind" src="../assets/tailwindcss.png">
               <img class="logo-techs" alt="logo-github" src="../assets/github.svg">
             </div> 
           </div>
@@ -67,6 +67,9 @@
   }
   p {
     color:white;
+  }
+  h4 {
+    text-transform: uppercase;
   }
 
   /*Smartphone Version*/
@@ -208,7 +211,7 @@
       justify-content: center;
     }
     .logo-techs {
-      width: 5em;
+      width: 4em;
       margin: 2em;
     }
   }
@@ -264,7 +267,7 @@
     .stack-tech {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center;   
     }
     .logos {
       display: flex;
@@ -273,7 +276,7 @@
       width: 30em;
     }
     .logo-techs {
-      width: 4em;
+      width: 5em;
       margin: 1em;
     }
   }

@@ -8,6 +8,7 @@
         <p class="email"><img class="contact-logo" src="../assets/mail.svg" alt="email-logo" HSPACE="10"> alexandrapinheiro.dev@gmail.com</p>
         <p class="phone"><img class="contact-logo" src="../assets/phone.svg" alt="email-logo" HSPACE="10">07 61 43 95 98</p>
       </div>
+      <a href="#information"><div class="arrow"></div></a>
     </div>
   </template>
   
@@ -41,6 +42,16 @@
       text-align: center;
     }
 
+div.arrow {
+	width: 6vmin;
+  height: 6vmin;
+	box-sizing: border-box;
+	position: fixed;
+	left: 90%;
+	top: 50%;
+	transform: rotate(-45deg);
+}
+	
     /*Smartphone Version*/
     @media only screen and (max-width: 767px) {
       .block-container {
@@ -109,6 +120,39 @@
       .contact-logo {
         width: 2em;
       }
+      div.arrow::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .8vmin .8vmin 0 0;
+		border-style: solid;
+		border-color: black;
+		transition: .2s ease;
+		display: block;
+		transform-origin: 100% 0;
+	}
+	div.arrow:after {
+		content: '';
+		float: left;
+		position: relative;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		border-width: 0 .8vmin 0 0;
+		border-style: solid;
+		border-color: black;
+		transform-origin: 100% 0;
+		transition:.2s ease;
+	}
+	div.arrow:hover::after {
+		transform: rotate(45deg);
+		border-color: orange;
+		height: 120%;
+	}
+	div.arrow:hover::before {
+		border-color: orange;
+		transform: scale(.8);
+	}
     }
     
   </style>
